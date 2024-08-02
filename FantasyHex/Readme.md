@@ -1,0 +1,347 @@
+## Image sizes
+
+Each tile is 32 x 28 pixels
+
+## Credits
+
+### CuddlyClover
+
+Base tile icons for the "Fantasy Hex" tileset belong to CuddlyClover @ https://cuddlyclover.itch.io/fantasy-hex-tiles: 
+
+- Tundra
+- TundraForest
+- Grassland
+- Desert
+- Desert+Farm
+- Mountain
+- Snow
+- Hill
+- Ice
+- Marsh
+- Oasis
+- Ocean
+- Coast
+- Plains
+- Plains+Farm
+
+### The Bucketeer
+
+Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons 3.0
+
+#### Tiles
+
+- Academy-Snow.png
+- Academy.png
+- Aluminum.png
+- Ancient ruins-Jungle.png
+- Ancient ruins-Sand.png
+- Ancient ruins-Snow.png
+- Ancient ruins.png
+- Ancient ruins2.png
+- Atoll.png
+- Bananas.png
+- Barbarian encampment-Snow.png
+- Barbarian encampment.png
+- Barringer Crater.png
+- Bison+Camp.png
+- Bison.png
+- Cattle+Pasture.png
+- Cattle.png
+- Cerro de Potosi.png
+- Citadel-Snow.png
+- Citadel.png
+- Citrus+Plantation.png
+- Citrus.png
+- City center-Ancient era.png
+- City center-Atomic era.png
+- City center-Classical era.png
+- City center-Future era.png
+- City center-Industrial era.png
+- City center-Information era.png
+- City center-Medieval era.png
+- City center-Modern era.png
+- City center-Renaissance era.png
+- City center.png
+- City ruins.png
+- Coal.png
+- Coast.png
+- Cocoa+Plantation.png
+- Cocoa.png
+- Copper.png
+- Cotton.png
+- Crab.png
+- Customs house.png
+- Deer+Camp.png
+- Deer.png
+- Desert+Farm.png
+- Desert+Flood plains+Farm.png
+- Desert.png
+- Dyes+Plantation.png
+- Dyes.png
+- El Dorado.png
+- Fallout.png
+- Fish.png
+- Fishing Boats.png
+- Flood plains.png
+- Forest.png
+- Fort.png
+- Fountain of Youth.png
+- Furs+Camp.png
+- Furs.png
+- Gems.png
+- Gold Ore.png
+- Grand Mesa.png
+- Grassland+Farm.png
+- Grassland+Forest+Camp.png
+- Grassland+Forest+Deer+Camp.png
+- Grassland+Forest+Furs+Camp.png
+- Grassland+Forest+Lumber mill.png
+- Grassland+Forest+Truffles+Camp.png
+- Grassland+Hill+Farm.png
+- Grassland+Hill+Forest+Camp.png
+- Grassland+Hill+Forest+Trading post.png
+- Grassland+Jungle+Trading post.png
+- Grassland.png
+- GrasslandForest.png
+- Great Barrier Reef.png
+- Hill.png
+- HillForest+Lumber mill.png
+- HillMarbleQuarry.png
+- HillMine.png
+- HillStoneQuarry.png
+- Holy site.png
+- Horses+Pasture.png
+- Horses.png
+- Ice.png
+- Incense+Plantation.png
+- Incense.png
+- Iron.png
+- Ivory+Camp.png
+- Ivory.png
+- Jungle.png
+- Krakatoa.png
+- Lakes.png
+- Landmark.png
+- Manufactory.png
+- Marble.png
+- Marsh.png
+- Mine.png
+- Moai.png
+- Mount Fuji.png
+- Mount Kailash.png
+- Mount Sinai.png
+- Mountain.png
+- Oasis.png
+- Ocean.png
+- Offshore Platform.png
+- Oil well.png
+- Oil.png
+- Old Faithful.png
+- Pasture.png
+- Pearls.png
+- Plains+Farm.png
+- Plains+Forest+Camp.png
+- Plains+Forest+Lumber mill.png
+- Plains+Jungle+Trading post.png
+- Plains.png
+- PlainsForest.png
+- PlainsJungle.png
+- Plantation+Bananas.png
+- Plantation+Cotton.png
+- Plantation.png
+- Polder.png
+- Quarry+Marble.png
+- Quarry+Stone.png
+- Quarry.png
+- River-Bottom.png
+- River-BottomLeft.png
+- River-BottomRight.png
+- Rock of Gibraltar.png
+- Salt.png
+- Sheep+Pasture.png
+- Sheep.png
+- Silk+Plantation.png
+- Silk.png
+- Silver.png
+- Snow+Farm.png
+- Snow.png
+- Spices+Plantation.png
+- Spices.png
+- Sri Pada.png
+- Stone.png
+- Sugar+Plantation.png
+- Sugar.png
+- Terrace farm.png
+- Trading post.png
+- Truffles+Camp.png
+- Truffles.png
+- Tundra+Farm.png
+- Tundra+Forest+Camp+Furs.png
+- Tundra+Forest+Camp.png
+- Tundra+Forest+Deer+Camp.png
+- Tundra+Forest+Lumber mill.png
+- Tundra+Forest+Truffles+Camp.png
+- Tundra.png
+- TundraForest.png
+- Uluru.png
+- Uranium.png
+- Whales+Fishing Boats.png
+- Whales.png
+- Wheat.png
+- Wine+Plantation.png
+- Wine.png
+
+#### Units
+
+- African Forest Elephant.png
+- Anti-Aircraft Gun.png
+- Anti-Tank Gun.png
+- Archaeologist.png
+- Archer.png
+- Artillery.png
+- Atlatlist.png
+- Axe Thrower.png
+- Ballista.png
+- Battering Ram.png
+- Battleship.png
+- Bazooka.png
+- Berber Cavalry.png
+- Berserker.png
+- Bowman.png
+- Brute.png
+- Camel Archer.png
+- Cannon.png
+- Caravan.png
+- Caravel.png
+- Cargo Ship.png
+- Carolean.png
+- Carrier.png
+- Cataphract.png
+- Catapult.png
+- Cavalry.png
+- Chariot Archer.png
+- Chu-Ko-Nu.png
+- CivilianLandUnit.png
+- Comanche Rider.png
+- Companion Cavalry.png
+- Composite Bowman.png
+- Conquistador.png
+- Cossack.png
+- Crossbowman.png
+- Cruiser.png
+- Destroyer.png
+- Dromon.png
+- EmbarkedUnit-Civilian-Modern era.png
+- EmbarkedUnit-Civilian.png
+- EmbarkedUnit-Military-Modern era.png
+- EmbarkedUnit-Military.png
+- EmbarkedUnit-Settler-Modern era.png
+- EmbarkedUnit-Settler.png
+- Foreign Legion.png
+- Frigate.png
+- Galleass.png
+- Galley.png
+- Gatling Gun.png
+- Giant Death Robot.png
+- Great Admiral.png
+- Great Artist.png
+- Great Engineer.png
+- Great Galleass.png
+- Great General.png
+- Great Merchant.png
+- Great Musician.png
+- Great Prophet.png
+- Great Scientist.png
+- Great War Infantry.png
+- Great Writer.png
+- Hakkapeliitta.png
+- Helicopter Gunship.png
+- Hoplite.png
+- Horse Archer.png
+- Horseman.png
+- Hussar.png
+- Hwach'a.png
+- Immortal.png
+- Impi.png
+- Infantry.png
+- Inquisitor.png
+- Ironclad.png
+- Jaguar.png
+- Janissary.png
+- Keshik.png
+- Khan.png
+- Knight.png
+- Kris Swordsman.png
+- Lancer.png
+- LandUnit.png
+- Landship.png
+- Landsknecht.png
+- Legion.png
+- Longbowman.png
+- Longswordsman.png
+- Machine Gun.png
+- Mandekalu Cavalry.png
+- Maori Warrior.png
+- Marauder.png
+- Marine.png
+- Mechanized Infantry.png
+- Mehal Sefari.png
+- Merchant Of Venice.png
+- Minuteman.png
+- Missile Cruiser.png
+- Missionary.png
+- Mobile SAM.png
+- Modern Armor.png
+- Mohawk Warrior.png
+- Musketeer.png
+- Musketman.png
+- Naresuan's Elephant.png
+- Nau.png
+- Norwegian Ski Infantry.png
+- Nuclear Submarine.png
+- Panzer.png
+- Paratrooper.png
+- Pathfinder.png
+- Persian Immortal.png
+- Pictish Warrior.png
+- Pikeman.png
+- Pracinha.png
+- Privateer.png
+- Quinquereme.png
+- Rifleman.png
+- Rocket Artillery.png
+- SS Booster.png
+- SS Cockpit.png
+- SS Engine.png
+- SS Stasis Chamber.png
+- Samurai.png
+- Scout.png
+- Sea Beggar.png
+- Settler-Barbarians.png
+- Settler-Modern era-Barbarians.png
+- Settler-Modern era.png
+- Settler.png
+- Ship of the Line.png
+- Siege Tower.png
+- Sipahi.png
+- Skirmisher.png
+- Slinger.png
+- Spearman.png
+- Submarine.png
+- Swordsman.png
+- Tank.png
+- Tercio.png
+- Trebuchet.png
+- Trireme.png
+- Turtle Ship.png
+- War Chariot.png
+- War Elephant.png
+- Warrior.png
+- WaterUnit.png
+- Winged Hussar.png
+- Work Boats-Modern era.png
+- Work Boats.png
+- Worker-Barbarians-Modern era.png
+- Worker-Barbarians.png
+- Worker-Modern era.png
+- Worker.png

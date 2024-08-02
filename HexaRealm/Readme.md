@@ -1,0 +1,493 @@
+## Image sizes
+
+Each tile is 64 x 56 pixels
+
+## Credits
+
+### The Bucketeer
+
+Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons 3.0
+
+#### Tiles
+
+- Academy-Atomic era.png
+- Academy-Future era.png
+- Academy-Information era.png
+- Academy-Pillaged.png
+- Academy.png
+- AcademyT-Atomic era.png
+- AcademyT-Future era.png
+- AcademyT-Information era.png
+- AcademyT-Pillaged.png
+- AcademyT.png
+- Aluminum.png
+- Ancient ruins.png
+- Atoll.png
+- Bananas+Plantation-Pillaged.png
+- Bananas+Plantation.png
+- Bananas.png
+- Barbarian encampment.png
+- Barbarian encampmentT.png
+- Barringer Crater.png
+- Camp-Industrial era.png
+- Camp-Pillaged.png
+- Camp.png
+- Cattle+Pasture-Industrial era.png
+- Cattle+Pasture-Pillaged.png
+- Cattle+Pasture.png
+- Cattle.png
+- CattleG.png
+- CattleP.png
+- Cerro de Potosi.png
+- Citadel-Atomic era.png
+- Citadel-Pillaged.png
+- Citadel.png
+- CitadelT-Atomic era.png
+- CitadelT-Pillaged.png
+- CitadelT.png
+- Citrus+Plantation-Pillaged.png
+- Citrus+Plantation.png
+- Citrus.png
+- City center-Ancient era.png
+- City center-Atomic era.png
+- City center-Classical era.png
+- City center-Future era.png
+- City center-Industrial era.png
+- City center-Information era.png
+- City center-Medieval era.png
+- City center-Modern era.png
+- City center-Renaissance era.png
+- City center.png
+- City ruins.png
+- Coal.png
+- Coast.png
+- Copper.png
+- Cotton+Plantation-Pillaged.png
+- Cotton+Plantation.png
+- Cotton.png
+- Crab.png
+- Customs house-Atomic era.png
+- Customs house-Pillaged.png
+- Customs house.png
+- Customs houseT-Atomic era.png
+- Customs houseT-Pillaged.png
+- Customs houseT.png
+- Deer+Camp-Industrial era.png
+- Deer+Camp-Pillaged.png
+- Deer+Camp.png
+- Deer+CampT-Industrial era.png
+- Deer+CampT-Pillaged.png
+- Deer+CampT.png
+- Deer.png
+- Desert+Hill+Fallout.png
+- Desert+Hill+Fallout2.png
+- Desert+Hill.png
+- Desert+Hill2.png
+- Desert.png
+- Desert2.png
+- Desert3.png
+- Dyes+Plantation-Pillaged.png
+- Dyes+Plantation.png
+- Dyes.png
+- El Dorado.png
+- Fallout.png
+- Farm+Wheat.png
+- Farm-Pillaged.png
+- Farm.png
+- FarmD-Pillaged.png
+- FarmD.png
+- FarmDH-Pillaged.png
+- FarmDH.png
+- FarmG-Pillaged.png
+- FarmG.png
+- FarmGH-Pillaged.png
+- FarmGH.png
+- FarmP-Pillaged.png
+- FarmP.png
+- FarmPH-Pillaged.png
+- FarmPH.png
+- FarmS-Pillaged.png
+- FarmS.png
+- FarmSH-Pillaged.png
+- FarmSH.png
+- FarmT-Pillaged.png
+- FarmT.png
+- FarmTH-Pillaged.png
+- FarmTH.png
+- Fish.png
+- Fishing Boats-Industrial era.png
+- Fishing Boats.png
+- Flood plains.png
+- ForestG.png
+- ForestGH.png
+- ForestGHLow.png
+- ForestGHUp.png
+- ForestGLow.png
+- ForestGUp.png
+- ForestP.png
+- ForestPH.png
+- ForestPHLow.png
+- ForestPHUp.png
+- ForestPLow.png
+- ForestPUp.png
+- ForestT.png
+- ForestTH.png
+- ForestTLow.png
+- ForestTUp.png
+- Fort-Atomic era.png
+- Fort-Industrial era.png
+- Fort-Pillaged.png
+- Fort.png
+- FortT-Atomic era.png
+- FortT-Industrial era.png
+- FortT-Pillaged.png
+- FortT.png
+- Fountain of Youth.png
+- Furs+Camp-Industrial era.png
+- Furs+Camp-Pillaged.png
+- Furs+Camp.png
+- Furs.png
+- FursT+Camp-Industrial era.png
+- FursT+Camp-Pillaged.png
+- FursT+Camp.png
+- FursT.png
+- Gems.png
+- Gold Ore.png
+- Grand Mesa.png
+- Grassland+Hill+Fallout.png
+- Grassland+Hill+Fallout2.png
+- Grassland+Hill.png
+- Grassland+Hill2.png
+- Grassland.png
+- Grassland2.png
+- Grassland3.png
+- Great Barrier Reef.png
+- Hill.png
+- Holy site-Pillaged.png
+- Holy site.png
+- Holy siteT-Pillaged.png
+- Holy siteT.png
+- Horses+Pasture-Industrial era.png
+- Horses+Pasture-Pillaged.png
+- Horses+Pasture.png
+- Horses.png
+- HutFarm-Atomic era.png
+- HutFarm-Atomic era2.png
+- HutFarm-Atomic era3.png
+- HutFarm-Industrial era.png
+- HutFarm-Industrial era2.png
+- HutFarm-Industrial era3.png
+- HutFarm.png
+- HutFarm2.png
+- HutFarm3.png
+- HutFarmT-Atomic era.png
+- HutFarmT-Atomic era2.png
+- HutFarmT-Industrial era.png
+- HutFarmT-Industrial era2.png
+- HutFarmT.png
+- HutFarmT2.png
+- HutFarmT3.png
+- Ice.png
+- Incense+Plantation-Pillaged.png
+- Incense+Plantation.png
+- Incense.png
+- Iron.png
+- Ivory+Camp-Industrial era.png
+- Ivory+Camp-Pillaged.png
+- Ivory+Camp.png
+- Ivory.png
+- JungleG.png
+- JungleGLow.png
+- JungleGUp.png
+- JungleP.png
+- JunglePLow.png
+- JunglePUp.png
+- Krakatoa.png
+- Lakes.png
+- Landmark-Pillaged.png
+- Landmark.png
+- LandmarkT-Pillaged.png
+- LandmarkT.png
+- Lumber mill-Industrial era.png
+- Lumber mill-Pillaged.png
+- Lumber mill.png
+- Lumber millT-Industrial era.png
+- Lumber millT-Pillaged.png
+- Lumber millT.png
+- Manufactory-Atomic era.png
+- Manufactory-Industrial era.png
+- Manufactory-Pillaged.png
+- Manufactory.png
+- ManufactoryT-Atomic era.png
+- ManufactoryT-Industrial era.png
+- ManufactoryT-Pillaged.png
+- ManufactoryT.png
+- Marble+Quarry-Industrial era.png
+- Marble+Quarry-Pillaged.png
+- Marble+Quarry.png
+- Marble+QuarryT-Industrial era.png
+- Marble+QuarryT-Pillaged.png
+- Marble+QuarryT.png
+- Marble.png
+- Marsh.png
+- Mine-Industrial era.png
+- Mine-Pillaged.png
+- Mine.png
+- MineT-Industrial era.png
+- MineT-Pillaged.png
+- MineT.png
+- Moai-Pillaged.png
+- Moai.png
+- Mount Fuji.png
+- Mount Kailash.png
+- Mount Sinai.png
+- Mountain-1.png
+- Mountain.png
+- Mountain2.png
+- Oasis.png
+- Ocean.png
+- Offshore Platform.png
+- Oil well-Pillaged.png
+- Oil well.png
+- Oil+Offshore Platform.png
+- Oil+Oil well-Pillaged.png
+- Oil+Oil well.png
+- Oil.png
+- OilS.png
+- Old Faithful.png
+- Pasture-Industrial era.png
+- Pasture-Pillaged.png
+- Pasture.png
+- Pearls.png
+- Plains+Hill+Fallout.png
+- Plains+Hill+Fallout2.png
+- Plains+Hill.png
+- Plains+Hill2.png
+- Plains.png
+- Plains2.png
+- Plains3.png
+- Plantation-Pillaged.png
+- Plantation.png
+- Polder-Industrial era.png
+- Polder-Pillaged.png
+- Polder.png
+- Quarry-Industrial era.png
+- Quarry-Pillaged.png
+- Quarry.png
+- QuarryT-Industrial era.png
+- QuarryT-Pillaged.png
+- QuarryT.png
+- Railroad-Pillaged.png
+- River-Bottom.png
+- River-BottomLeft.png
+- River-BottomRight.png
+- Road-Pillaged.png
+- Rock of Gibraltar.png
+- RuinsD.png
+- RuinsG.png
+- RuinsT.png
+- Salt.png
+- Sheep+Pasture-Industrial era.png
+- Sheep+Pasture-Pillaged.png
+- Sheep+Pasture.png
+- Sheep.png
+- Silk+Plantation-Pillaged.png
+- Silk+Plantation.png
+- Silk.png
+- Silver.png
+- Snow+Hill+Fallout.png
+- Snow+Hill+Fallout2.png
+- Snow+Hill.png
+- Snow+Hill2.png
+- Snow.png
+- Snow2.png
+- Snow3.png
+- Spices+Plantation-Pillaged.png
+- Spices+Plantation.png
+- Spices.png
+- Sri Pada.png
+- Stone+Quarry-Industrial era.png
+- Stone+Quarry-Pillaged.png
+- Stone+Quarry.png
+- Stone+QuarryT-Industrial era.png
+- Stone+QuarryT-Pillaged.png
+- Stone+QuarryT.png
+- Stone.png
+- StoneD+Quarry-Industrial era.png
+- StoneD+Quarry-Pillaged.png
+- StoneD+Quarry.png
+- StoneD.png
+- Sugar+Plantation-Pillaged.png
+- Sugar+Plantation.png
+- Sugar.png
+- Terrace farm.png
+- Trading post-Industrial era.png
+- Trading post-Pillaged.png
+- Trading post.png
+- Trading postT-Industrial era.png
+- Trading postT-Pillaged.png
+- Trading postT.png
+- Truffles+Camp-Industrial era.png
+- Truffles+Camp-Pillaged.png
+- Truffles+Camp.png
+- Truffles+CampT-Industrial era.png
+- Truffles+CampT-Pillaged.png
+- Truffles+CampT.png
+- Truffles.png
+- Tundra+Hill+Fallout.png
+- Tundra+Hill+Fallout2.png
+- Tundra+Hill.png
+- Tundra+Hill2.png
+- Tundra.png
+- Tundra2.png
+- Tundra3.png
+- Uluru.png
+- Uranium.png
+- Whales+Fishing Boats-Industrial era.png
+- Whales+Fishing Boats.png
+- Whales.png
+- Wheat+Farm-Pillaged.png
+- Wheat.png
+- Wine+Plantation-Pillaged.png
+- Wine+Plantation.png
+- Wine.png
+
+#### Units
+
+- African Forest Elephant.png
+- Anti-Aircraft Gun.png
+- Anti-Tank Gun.png
+- Archer.png
+- Artillery-Atomic era.png
+- Artillery.png
+- Atlatlist.png
+- Ballista.png
+- Battering Ram.png
+- Battleship.png
+- Berserker.png
+- Bowman.png
+- Brute.png
+- Camel Archer.png
+- Cannon.png
+- Caravel.png
+- Carolean.png
+- Carrier-Information era.png
+- Carrier.png
+- Cataphract.png
+- Catapult.png
+- Cavalry.png
+- Chariot Archer.png
+- Chu-Ko-Nu.png
+- CivilianLandUnit.png
+- Companion Cavalry.png
+- Composite Bowman.png
+- Conquistador.png
+- Cossack.png
+- Crossbowman.png
+- Destroyer.png
+- Dromon.png
+- EmbarkedUnit-Civilian-Modern era.png
+- EmbarkedUnit-Civilian-Renaissance era.png
+- EmbarkedUnit-Civilian.png
+- EmbarkedUnit-Military-Modern era.png
+- EmbarkedUnit-Military-Renaissance era.png
+- EmbarkedUnit-Military.png
+- EmbarkedUnit-Settler-Modern era.png
+- EmbarkedUnit-Settler-Renaissance era.png
+- EmbarkedUnit-Settler.png
+- Foreign Legion.png
+- Frigate.png
+- Galleass.png
+- Galley.png
+- Gatling Gun.png
+- Giant Death Robot.png
+- Great Artist-Modern era.png
+- Great Artist.png
+- Great Engineer-Modern era.png
+- Great Engineer.png
+- Great General-Modern era.png
+- Great General.png
+- Great Merchant-Modern era.png
+- Great Merchant.png
+- Great Prophet.png
+- Great Scientist-Modern era.png
+- Great Scientist.png
+- Great War Infantry.png
+- Hakkapeliitta.png
+- Helicopter Gunship.png
+- Hoplite.png
+- Horse Archer.png
+- Horseman.png
+- Hussar.png
+- Hwach'a.png
+- Infantry.png
+- Inquisitor.png
+- Ironclad.png
+- Jaguar.png
+- Janissary.png
+- Keshik.png
+- Khan-Modern era.png
+- Khan.png
+- Knight.png
+- Lancer.png
+- LandUnit.png
+- Landship.png
+- Landsknecht.png
+- Legion.png
+- Longbowman.png
+- Longswordsman.png
+- Machine Gun.png
+- Mandekalu Cavalry.png
+- Maori Warrior.png
+- Marauder.png
+- Marine.png
+- Mechanized Infantry.png
+- Mehal Sefari.png
+- Minuteman.png
+- Missile Cruiser.png
+- Missionary.png
+- Mobile SAM.png
+- Modern Armor.png
+- Mohawk Warrior.png
+- Musketeer.png
+- Musketman.png
+- Naresuan's Elephant.png
+- Norwegian Ski Infantry.png
+- Nuclear Submarine.png
+- Panzer.png
+- Paratrooper.png
+- Persian Immortal.png
+- Pictish Warrior.png
+- Pikeman.png
+- Privateer.png
+- Quinquereme.png
+- Rifleman.png
+- Rocket Artillery.png
+- SS Booster.png
+- SS Cockpit.png
+- SS Engine.png
+- SS Stasis Chamber.png
+- Samurai.png
+- Scout.png
+- Sea Beggar.png
+- Settler-Modern era.png
+- Settler.png
+- Ship of the Line.png
+- Sipahi.png
+- Skirmisher.png
+- Slinger.png
+- Spearman.png
+- Submarine.png
+- Swordsman.png
+- Tank.png
+- Tercio.png
+- Trebuchet.png
+- Trireme.png
+- Turtle Ship.png
+- War Chariot.png
+- War Elephant.png
+- Warrior.png
+- Work Boats-Modern era.png
+- Work Boats.png
+- Worker-Modern era.png
+- Worker.png
