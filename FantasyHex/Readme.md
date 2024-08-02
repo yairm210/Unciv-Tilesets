@@ -1132,33 +1132,100 @@ Unciv units:
 
 Arcane & Diesel units:
 
-FantasyHex/Units/Airship.png
-FantasyHex/Units/Arcane Anti-Air.png
-FantasyHex/Units/Arcane Specialist.png
-FantasyHex/Units/Artillery-Diesel.png
-FantasyHex/Units/Battle Tank.png
-FantasyHex/Units/Battlecruiser.png
-FantasyHex/Units/Bombardier.png
-FantasyHex/Units/Cannon-Diesel.png
-FantasyHex/Units/Cruiser-Diesel.png
-FantasyHex/Units/Field Gun-Diesel.png
-FantasyHex/Units/Flying Fortress.png
-FantasyHex/Units/Flying Ironclad.png
-FantasyHex/Units/Frigate-Diesel.png
-FantasyHex/Units/Golem.png
-FantasyHex/Units/Grenadier-Diesel.png
-FantasyHex/Units/Gunboat.png
-FantasyHex/Units/Gyro Flyer.png
-FantasyHex/Units/Heavy Golem.png
-FantasyHex/Units/Heavy Gunship.png
-FantasyHex/Units/Heavy Infantry-Diesel.png
-FantasyHex/Units/Infantry-Diesel.png
-FantasyHex/Units/Machine Gun-Diesel.png
-FantasyHex/Units/Mechanized Infantry-Diesel.png
-FantasyHex/Units/Missile Artillery-Diesel.png
-FantasyHex/Units/Motorized Skirmisher.png
-FantasyHex/Units/Rune Cannon.png
-FantasyHex/Units/Tank-Diesel.png
-FantasyHex/Units/Titan.png
-FantasyHex/Units/War Wizard.png
-FantasyHex/Units/Wizard.png
+- Airship.png
+- Arcane Anti-Air.png
+- Arcane Specialist.png
+- Artillery-Diesel.png
+- Battle Tank.png
+- Battlecruiser.png
+- Bombardier.png
+- Cannon-Diesel.png
+- Cruiser-Diesel.png
+- Field Gun-Diesel.png
+- Flying Fortress.png
+- Flying Ironclad.png
+- Frigate-Diesel.png
+- Golem.png
+- Grenadier-Diesel.png
+- Gunboat.png
+- Gyro Flyer.png
+- Heavy Golem.png
+- Heavy Gunship.png
+- Heavy Infantry-Diesel.png
+- Infantry-Diesel.png
+- Machine Gun-Diesel.png
+- Mechanized Infantry-Diesel.png
+- Missile Artillery-Diesel.png
+- Motorized Skirmisher.png
+- Rune Cannon.png
+- Tank-Diesel.png
+- Titan.png
+- War Wizard.png
+- Wizard.png
+
+Advance Wars units: 
+
+- Anti-Aircraft Gun-Black Hole.png
+- Anti-Aircraft Gun-Blue Moon.png
+- Anti-Aircraft Gun-Green Earth.png
+- Anti-Aircraft Gun-Orange Star.png
+- Anti-Aircraft Gun-Yellow Comet.png
+- Artillery-Black Hole.png
+- Artillery-Blue Moon.png
+- Artillery-Green Earth.png
+- Artillery-Orange Star.png
+- Artillery-Yellow Comet.png
+- Battleship-Black Hole.png
+- Battleship-Blue Moon.png
+- Battleship-Green Earth.png
+- Battleship-Orange Star.png
+- Battleship-Yellow Comet.png
+- Carrier-Black Hole.png
+- Carrier-Blue Moon.png
+- Carrier-Green Earth.png
+- Carrier-Orange Star.png
+- Carrier-Yellow Comet.png
+- Destroyer-Black Hole.png
+- Destroyer-Blue Moon.png
+- Destroyer-Green Earth.png
+- Destroyer-Orange Star.png
+- Destroyer-Yellow Comet.png
+- Great General-Black Hole.png
+- Great General-Blue Moon.png
+- Great General-Green Earth.png
+- Great General-Orange Star.png
+- Great General-Yellow Comet.png
+- Long Range MRLS.png
+- Mechanized Infantry-Black Hole.png
+- Mechanized Infantry-Blue Moon.png
+- Mechanized Infantry-Green Earth.png
+- Mechanized Infantry-Orange Star.png
+- Mechanized Infantry-Yellow Comet.png
+- Megatank.png
+- Mobile SAM-Black Hole.png
+- Mobile SAM-Blue Moon.png
+- Mobile SAM-Green Earth.png
+- Mobile SAM-Orange Star.png
+- Mobile SAM-Yellow Comet.png
+- Modern Armor-Black Hole.png
+- Modern Armor-Blue Moon.png
+- Modern Armor-Green Earth.png
+- Modern Armor-Orange Star.png
+- Modern Armor-Yellow Comet.png
+- Neotank.png
+- Rocket Artillery-Black Hole.png
+- Rocket Artillery-Blue Moon.png
+- Rocket Artillery-Green Earth.png
+- Rocket Artillery-Orange Star.png
+- Rocket Artillery-Yellow Comet.png
+- Special Ops.png
+- Submarine-Black Hole.png
+- Submarine-Blue Moon.png
+- Submarine-Green Earth.png
+- Submarine-Orange Star.png
+- Submarine-Yellow Comet.png
+- Tank-Black Hole.png
+- Tank-Blue Moon.png
+- Tank-Green Earth.png
+- Tank-Orange Star.png
+- Tank-Yellow Comet.png
