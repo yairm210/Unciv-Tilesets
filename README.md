@@ -8,6 +8,14 @@ What this means is, you can use them for whatever purpose you want, but you need
 
 Credits for units contains all layers of that unit (unit-1, unit-2, etc)
 
+## How to use
+
+The idea is, when creating a mod, you can
+
+- [Download the entire repo as a zip](https://github.com/yairm210/Unciv-Tilesets/archive/refs/heads/main.zip)
+- Using your favorite image viewer, find the images you want
+- Find who to credit for these files in this readme
+
 ## FantasyHex
 
 ### CuddlyClover
