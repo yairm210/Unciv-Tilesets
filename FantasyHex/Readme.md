@@ -193,6 +193,8 @@ Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons
 
 #### Units
 
+Unciv units:
+
 - African Forest Elephant.png
 - Anti-Aircraft Gun.png
 - Anti-Tank Gun.png
@@ -345,3 +347,124 @@ Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons
 - Worker-Barbarians.png
 - Worker-Modern era.png
 - Worker.png
+
+(Warfare Expanded)[https://github.com/GeneralWadaling/Warfare-Expanded-Unciv-Bucketeer] units:
+
+- Aegis Cruiser.png
+- Airfield Ground Unit.png
+- Ambulance.png
+- Anti Tank Rifle.png
+- Armed Peasants.png
+- Armored Car.png
+- Armored Cruiser.png
+- Armored Horseman.png
+- Armored Infantry.png
+- Arquebusier.png
+- Arsenal Ship.png
+- Aswar.png
+- Bombard Cannon.png
+- Bombard.png
+- Bow Rider.png
+- Carrack.png
+- Citizen Militia.png
+- Cog.png
+- Commando.png
+- Commerce Raider.png
+- Conscripts.png
+- Courser.png
+- Cuirasser.png
+- Darughachi.png
+- Demolition Sapper.png
+- Draftee.png
+- Dragoon.png
+- Drone Launch Vehicle.png
+- Druid.png
+- Eagle Warrior.png
+- Explorer.png
+- Field Artillery.png
+- Field Cannon.png
+- Field Gun.png
+- Field Howitzer.png
+- Flamethrower.png
+- Gajnal.png
+- Garde Imperiale.png
+- Gatling Elephant.png
+- Ghazi.png
+- Great Bombard.png
+- Great Galley.png
+- Great General-Industrial era.png
+- Great General-Information era.png
+- Greek Trireme.png
+- Grenadier.png
+- Heavy Chariot.png
+- Heavy Horse Archer.png
+- Heavy Howitzer.png
+- Heavy Infantry.png
+- Heavy Weapons.png
+- Horse Artillery.png
+- Hunnic Battering Ram.png
+- Hunnic Horde Archer.png
+- Incan Slinger.png
+- Irregulars.png
+- Javelineer.png
+- Jazayerchi.png
+- Khillaychuki Cavalry.png
+- Khopesh Swordsman.png
+- Land Dreadnought.png
+- Levies.png
+- Light Cruiser.png
+- Light Infantry.png
+- Line Infantry.png
+- Longship.png
+- Man O War.png
+- Medic.png
+- Medieval Lancer.png
+- Medieval Siege Tower.png
+- Men At Arms.png
+- Militiaman.png
+- Missile Artillery.png
+- Missile Frigate.png
+- Modern AT Missile.png
+- Modern Commando.png
+- Modern Heavy Weapons.png
+- Modern Infantry.png
+- Modern Marine.png
+- Modern Paratrooper.png
+- Modern Pirate.png
+- Modern SPG.png
+- Modern Tank Destroyer.png
+- Mongol Marauder.png
+- Mongol Raider.png
+- Monitor.png
+- Motorized Infantry.png
+- Mounted Rifleman.png
+- Naval Infantry.png
+- Nuclear Carrier.png
+- Nuke Cannon.png
+- Oromo Cavalry.png
+- Pike and Shot.png
+- Pirate Galley.png
+- Qing Banner Cavalry (Ranged).png
+- Qing Banner Cavalry.png
+- Ranger.png
+- Red Army Tank.png
+- Redcoat.png
+- Royal Navy Ship of the Line.png
+- Sabum Kibittum.png
+- Self Propelled Gun.png
+- Siege Ram.png
+- Spear Thrower.png
+- Spec Ops.png
+- Stealth Tank.png
+- Stoneslinger.png
+- Sturmtruppen.png
+- Superheavy Tank.png
+- Supply Truck.png
+- Tank Destroyer.png
+- Technical.png
+- Theatre Defense System.png
+- Treasure Ship.png
+- Varangian Guard.png
+- Volunteers.png
+- Yamato Battleship.png
+- Zeppelin.png
