@@ -1235,6 +1235,7 @@ Alpha Frontier units:
 - Archangel Gunship.png
 - Archangel Mecha.png
 - Bladehead.png
+- Brutes of War (Hybrid Trooper).png
 - Chaser.png
 - Colonizer-xeno.png
 - Constructor-xeno.png
@@ -1250,6 +1251,7 @@ Alpha Frontier units:
 - Reaper.png
 - Sentinel.png
 - Silencer.png
+- Silent Fleet (Phantom Submersible).png
 - Siren.png
 - Thunderstrike (Heavy Heli Gunship).png
 - Ulfradrake.png
@@ -1401,7 +1403,6 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Battleship-AlphaFrontier.png
 - Behemoth.png
 - Boondock Posse (Frontier Militia).png
-- Brutes of War (Hybrid Trooper).png
 - Bugwolf.png
 - Civil Protection Mecha.png
 - Clone Trooper.png
@@ -1521,7 +1522,6 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Rover Explorer.png
 - Seadog.png
 - Siege Walker.png
-- Silent Fleet (Phantom Submersible).png
 - Silver Arbalest Company (Artillery Mecha).png
 - SPAA.png
 - SPECTRE (Stealth Operative).png
