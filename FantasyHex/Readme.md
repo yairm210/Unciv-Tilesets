@@ -468,3 +468,624 @@ Unciv units:
 - Volunteers.png
 - Yamato Battleship.png
 - Zeppelin.png
+
+(Civ style set)[https://github.com/GeneralWadaling/Civ-style-set-by-Bucketeer] units:
+
+- Anti-Aircraft Gun-African.png
+- Anti-Aircraft Gun-Barbarians.png
+- Anti-Aircraft Gun-East Asian.png
+- Anti-Aircraft Gun-Germanic.png
+- Anti-Aircraft Gun-Mediterranean.png
+- Anti-Aircraft Gun-Mesopotamian.png
+- Anti-Aircraft Gun-Middle Eastern.png
+- Anti-Aircraft Gun-Nordic.png
+- Anti-Aircraft Gun-North American.png
+- Anti-Aircraft Gun-Oceania.png
+- Anti-Aircraft Gun-Slavic.png
+- Anti-Aircraft Gun-South American.png
+- Anti-Tank Gun-Barbarians.png
+- Anti-Tank Gun-East Asian.png
+- Anti-Tank Gun-Germanic.png
+- Anti-Tank Gun-Mediterranean.png
+- Anti-Tank Gun-Mesopotamian.png
+- Anti-Tank Gun-Middle Eastern.png
+- Anti-Tank Gun-Nordic.png
+- Anti-Tank Gun-North American.png
+- Anti-Tank Gun-Oceania.png
+- Anti-Tank Gun-Slavic.png
+- Anti-Tank Gun-South American.png
+- Archaeologist-African.png
+- Archaeologist-East Asian.png
+- Archaeologist-Germanic.png
+- Archaeologist-Mediterranean.png
+- Archaeologist-Mesopotamian.png
+- Archaeologist-Middle Eastern.png
+- Archaeologist-Nordic.png
+- Archaeologist-North American.png
+- Archaeologist-Oceania.png
+- Archaeologist-South American.png
+- Archer-African.png
+- Archer-Barbarians.png
+- Archer-East Asian.png
+- Archer-Germanic.png
+- Archer-Mediterranean.png
+- Archer-Mesopotamian.png
+- Archer-Middle Eastern.png
+- Archer-Nordic.png
+- Archer-North American.png
+- Archer-Oceania.png
+- Archer-Slavic.png
+- Archer-South American.png
+- Artillery-African.png
+- Artillery-Barbarians.png
+- Artillery-East Asian.png
+- Artillery-Germanic.png
+- Artillery-Mediterranean.png
+- Artillery-Mesopotamian.png
+- Artillery-Middle Eastern.png
+- Artillery-Nordic.png
+- Artillery-North American.png
+- Artillery-Oceania.png
+- Artillery-Slavic.png
+- Artillery-South American.png
+- Bazooka-African.png
+- Bazooka-Barbarians.png
+- Bazooka-East Asian.png
+- Bazooka-Germanic.png
+- Bazooka-Mediterranean.png
+- Bazooka-Mesopotamian.png
+- Bazooka-Middle Eastern.png
+- Bazooka-Nordic.png
+- Bazooka-North American.png
+- Bazooka-Oceania.png
+- Bazooka-Slavic.png
+- Bazooka-South American.png
+- Caravan-African.png
+- Caravan-East Asian.png
+- Caravan-Germanic.png
+- Caravan-Mediterranean.png
+- Caravan-Mesopotamian.png
+- Caravan-Middle Eastern.png
+- Caravan-Nordic.png
+- Caravan-North American.png
+- Caravan-Oceania.png
+- Caravan-South American.png
+- Caravel-African.png
+- Caravel-Barbarians.png
+- Caravel-East Asian.png
+- Caravel-Germanic.png
+- Caravel-Mediterranean.png
+- Caravel-Mesopotamian.png
+- Caravel-Middle Eastern.png
+- Caravel-Nordic.png
+- Caravel-North American.png
+- Caravel-Oceania.png
+- Caravel-Slavic.png
+- Caravel-South American.png
+- Cargo Ship-African.png
+- Cargo Ship-East Asian.png
+- Cargo Ship-Germanic.png
+- Cargo Ship-Mediterranean.png
+- Cargo Ship-Mesopotamian.png
+- Cargo Ship-Middle Eastern.png
+- Cargo Ship-Nordic.png
+- Cargo Ship-North American.png
+- Cargo Ship-Oceania.png
+- Cargo Ship-South American.png
+- Carrier-Barbarians.png
+- Cavalry-African.png
+- Cavalry-Barbarians.png
+- Cavalry-East Asian.png
+- Cavalry-Germanic.png
+- Cavalry-Mediterranean.png
+- Cavalry-Mesopotamian.png
+- Cavalry-Middle Eastern.png
+- Cavalry-Nordic.png
+- Cavalry-North American.png
+- Cavalry-Oceania.png
+- Cavalry-Slavic.png
+- Cavalry-South American.png
+- Chariot Archer-African.png
+- Chariot Archer-Barbarians.png
+- Chariot Archer-East Asian.png
+- Chariot Archer-Germanic.png
+- Chariot Archer-Mediterranean.png
+- Chariot Archer-Mesopotamian.png
+- Chariot Archer-Middle Eastern.png
+- Chariot Archer-Nordic.png
+- Chariot Archer-North American.png
+- Chariot Archer-Oceania.png
+- Chariot Archer-Slavic.png
+- Chariot Archer-South American.png
+- Composite Bowman-African.png
+- Composite Bowman-Barbarians.png
+- Composite Bowman-East Asian.png
+- Composite Bowman-Germanic.png
+- Composite Bowman-Mediterranean.png
+- Composite Bowman-Mesopotamian.png
+- Composite Bowman-Middle Eastern.png
+- Composite Bowman-Nordic.png
+- Composite Bowman-North American.png
+- Composite Bowman-Oceania.png
+- Composite Bowman-Slavic.png
+- Composite Bowman-South American.png
+- Crossbowman-African.png
+- Crossbowman-Barbarians.png
+- Crossbowman-East Asian.png
+- Crossbowman-Germanic.png
+- Crossbowman-Mediterranean.png
+- Crossbowman-Mesopotamian.png
+- Crossbowman-Middle Eastern.png
+- Crossbowman-Nordic.png
+- Crossbowman-North American.png
+- Crossbowman-Oceania.png
+- Crossbowman-Slavic.png
+- Crossbowman-South American.png
+- Frigate-African.png
+- Frigate-Barbarians.png
+- Frigate-East Asian.png
+- Frigate-Germanic.png
+- Frigate-Mediterranean.png
+- Frigate-Mesopotamian.png
+- Frigate-Middle Eastern.png
+- Frigate-Nordic.png
+- Frigate-North American.png
+- Frigate-Oceania.png
+- Frigate-Slavic.png
+- Frigate-South American.png
+- Future Infantry-African.png
+- Future Infantry-Barbarians.png
+- Future Infantry-East Asian.png
+- Future Infantry-Germanic.png
+- Future Infantry-Mediterranean.png
+- Future Infantry-Mesopotamian.png
+- Future Infantry-Middle Eastern.png
+- Future Infantry-Nordic.png
+- Future Infantry-North American.png
+- Future Infantry-Oceania.png
+- Future Infantry-South American.png
+- Future Infantry.png
+- Galleass-African.png
+- Galleass-Barbarians.png
+- Galleass-East Asian.png
+- Galleass-Germanic.png
+- Galleass-Mediterranean.png
+- Galleass-Mesopotamian.png
+- Galleass-Middle Eastern.png
+- Galleass-Nordic.png
+- Galleass-North American.png
+- Galleass-Oceania.png
+- Galleass-Slavic.png
+- Galleass-South American.png
+- Gatling Gun-African.png
+- Gatling Gun-Barbarians.png
+- Gatling Gun-East Asian.png
+- Gatling Gun-Germanic.png
+- Gatling Gun-Mediterranean.png
+- Gatling Gun-Mesopotamian.png
+- Gatling Gun-Middle Eastern.png
+- Gatling Gun-Nordic.png
+- Gatling Gun-North American.png
+- Gatling Gun-Oceania.png
+- Gatling Gun-Slavic.png
+- Gatling Gun-South American.png
+- Giant Death Robot-African.png
+- Giant Death Robot-Barbarians.png
+- Giant Death Robot-East Asian.png
+- Giant Death Robot-Germanic.png
+- Giant Death Robot-Mediterranean.png
+- Giant Death Robot-Mesopotamian.png
+- Giant Death Robot-Middle Eastern.png
+- Giant Death Robot-Nordic.png
+- Giant Death Robot-North American.png
+- Giant Death Robot-Oceania.png
+- Giant Death Robot-Slavic.png
+- Giant Death Robot-South American.png
+- Great Admiral-East Asian.png
+- Great Admiral-Germanic.png
+- Great Admiral-Mediterranean.png
+- Great Admiral-Mesopotamian.png
+- Great Admiral-Middle Eastern.png
+- Great Admiral-Nordic.png
+- Great Admiral-North American.png
+- Great Admiral-Oceania.png
+- Great Admiral-South American.png
+- Great Artist-African.png
+- Great Artist-East Asian.png
+- Great Artist-Mediterranean.png
+- Great Artist-Mesopotamian.png
+- Great Artist-Middle Eastern.png
+- Great Artist-North American.png
+- Great Artist-Oceania.png
+- Great Artist-South American.png
+- Great Engineer-African.png
+- Great Engineer-East Asian.png
+- Great Engineer-Mediterranean.png
+- Great Engineer-Mesopotamian.png
+- Great Engineer-Middle Eastern.png
+- Great Engineer-North American.png
+- Great Engineer-Oceania.png
+- Great Engineer-South American.png
+- Great General-African.png
+- Great General-East Asian.png
+- Great General-Germanic.png
+- Great General-Mediterranean.png
+- Great General-Mesopotamian.png
+- Great General-Middle Eastern.png
+- Great General-Modern era.png
+- Great General-Nordic.png
+- Great General-North American.png
+- Great General-Oceania.png
+- Great General-Slavic.png
+- Great General-South American.png
+- Great Merchant-African.png
+- Great Merchant-East Asian.png
+- Great Merchant-Mediterranean.png
+- Great Merchant-Mesopotamian.png
+- Great Merchant-Middle Eastern.png
+- Great Merchant-North American.png
+- Great Merchant-Oceania.png
+- Great Merchant-South American.png
+- Great Musician-East Asian.png
+- Great Musician-Mediterranean.png
+- Great Musician-Mesopotamian.png
+- Great Musician-Middle Eastern.png
+- Great Musician-North American.png
+- Great Musician-Oceania.png
+- Great Musician-South American.png
+- Great Scientist-African.png
+- Great Scientist-East Asian.png
+- Great Scientist-Mediterranean.png
+- Great Scientist-Mesopotamian.png
+- Great Scientist-Middle Eastern.png
+- Great Scientist-North American.png
+- Great Scientist-Oceania.png
+- Great Scientist-South American.png
+- Great War Infantry-African.png
+- Great War Infantry-Barbarians.png
+- Great War Infantry-East Asian.png
+- Great War Infantry-Germanic.png
+- Great War Infantry-Mediterranean.png
+- Great War Infantry-Mesopotamian.png
+- Great War Infantry-Middle Eastern.png
+- Great War Infantry-Nordic.png
+- Great War Infantry-North American.png
+- Great War Infantry-Oceania.png
+- Great War Infantry-Slavic.png
+- Great War Infantry-South American.png
+- Great Writer-East Asian.png
+- Great Writer-Mediterranean.png
+- Great Writer-Mesopotamian.png
+- Great Writer-Middle Eastern.png
+- Great Writer-North American.png
+- Great Writer-Oceania.png
+- Great Writer-South American.png
+- Hand Axe.png
+- Helicopter Gunship-African.png
+- Helicopter Gunship-Barbarians.png
+- Helicopter Gunship-East Asian.png
+- Helicopter Gunship-Germanic.png
+- Helicopter Gunship-Mediterranean.png
+- Helicopter Gunship-Mesopotamian.png
+- Helicopter Gunship-Middle Eastern.png
+- Helicopter Gunship-Nordic.png
+- Helicopter Gunship-North American.png
+- Helicopter Gunship-Oceania.png
+- Helicopter Gunship-Slavic.png
+- Helicopter Gunship-South American.png
+- Horseman-African.png
+- Horseman-Barbarians.png
+- Horseman-East Asian.png
+- Horseman-Germanic.png
+- Horseman-Mediterranean.png
+- Horseman-Mesopotamian.png
+- Horseman-Middle Eastern.png
+- Horseman-Nordic.png
+- Horseman-North American.png
+- Horseman-Oceania.png
+- Horseman-Slavic.png
+- Horseman-South American.png
+- Infantry-African.png
+- Infantry-Barbarians.png
+- Infantry-East Asian.png
+- Infantry-Germanic.png
+- Infantry-Mediterranean.png
+- Infantry-Mesopotamian.png
+- Infantry-Middle Eastern.png
+- Infantry-Nordic.png
+- Infantry-North American.png
+- Infantry-Oceania.png
+- Infantry-Slavic.png
+- Infantry-South American.png
+- Knight-African.png
+- Knight-Barbarians.png
+- Knight-East Asian.png
+- Knight-Germanic.png
+- Knight-Mediterranean.png
+- Knight-Mesopotamian.png
+- Knight-Middle Eastern.png
+- Knight-Nordic.png
+- Knight-North American.png
+- Knight-Oceania.png
+- Knight-Slavic.png
+- Knight-South American.png
+- Lancer-African.png
+- Lancer-Barbarians.png
+- Lancer-East Asian.png
+- Lancer-Germanic.png
+- Lancer-Mediterranean.png
+- Lancer-Mesopotamian.png
+- Lancer-Middle Eastern.png
+- Lancer-Nordic.png
+- Lancer-North American.png
+- Lancer-Oceania.png
+- Lancer-Slavic.png
+- Lancer-South American.png
+- Landship-African.png
+- Landship-Barbarians.png
+- Landship-East Asian.png
+- Landship-Germanic.png
+- Landship-Mediterranean.png
+- Landship-Mesopotamian.png
+- Landship-Middle Eastern.png
+- Landship-Nordic.png
+- Landship-North American.png
+- Landship-Oceania.png
+- Landship-Slavic.png
+- Landship-South American.png
+- Longswordsman-African.png
+- Longswordsman-Barbarians.png
+- Longswordsman-East Asian.png
+- Longswordsman-Germanic.png
+- Longswordsman-Mediterranean.png
+- Longswordsman-Mesopotamian.png
+- Longswordsman-Middle Eastern.png
+- Longswordsman-Nordic.png
+- Longswordsman-North American.png
+- Longswordsman-Oceania.png
+- Longswordsman-Slavic.png
+- Longswordsman-South American.png
+- Machine Gun-African.png
+- Machine Gun-Barbarians.png
+- Machine Gun-East Asian.png
+- Machine Gun-Germanic.png
+- Machine Gun-Mediterranean.png
+- Machine Gun-Mesopotamian.png
+- Machine Gun-Middle Eastern.png
+- Machine Gun-Nordic.png
+- Machine Gun-North American.png
+- Machine Gun-Oceania.png
+- Machine Gun-Slavic.png
+- Machine Gun-South American.png
+- Marine-African.png
+- Marine-Barbarians.png
+- Marine-East Asian.png
+- Marine-Germanic.png
+- Marine-Mediterranean.png
+- Marine-Mesopotamian.png
+- Marine-Middle Eastern.png
+- Marine-Nordic.png
+- Marine-North American.png
+- Marine-Oceania.png
+- Marine-Slavic.png
+- Marine-South American.png
+- Mechanized Infantry-African.png
+- Mechanized Infantry-Barbarians.png
+- Mechanized Infantry-East Asian.png
+- Mechanized Infantry-Germanic.png
+- Mechanized Infantry-Mediterranean.png
+- Mechanized Infantry-Mesopotamian.png
+- Mechanized Infantry-Middle Eastern.png
+- Mechanized Infantry-Nordic.png
+- Mechanized Infantry-North American.png
+- Mechanized Infantry-Oceania.png
+- Mechanized Infantry-Slavic.png
+- Mechanized Infantry-South American.png
+- Mobile SAM-African.png
+- Mobile SAM-Barbarians.png
+- Mobile SAM-East Asian.png
+- Mobile SAM-Germanic.png
+- Mobile SAM-Mediterranean.png
+- Mobile SAM-Mesopotamian.png
+- Mobile SAM-Middle Eastern.png
+- Mobile SAM-Nordic.png
+- Mobile SAM-North American.png
+- Mobile SAM-Oceania.png
+- Mobile SAM-Slavic.png
+- Mobile SAM-South American.png
+- Modern Armor-African.png
+- Modern Armor-Barbarians.png
+- Modern Armor-East Asian.png
+- Modern Armor-Germanic.png
+- Modern Armor-Mediterranean.png
+- Modern Armor-Mesopotamian.png
+- Modern Armor-Middle Eastern.png
+- Modern Armor-Nordic.png
+- Modern Armor-North American.png
+- Modern Armor-Oceania.png
+- Modern Armor-Slavic.png
+- Modern Armor-South American.png
+- Musketman-African.png
+- Musketman-Barbarians.png
+- Musketman-East Asian.png
+- Musketman-Germanic.png
+- Musketman-Mediterranean.png
+- Musketman-Mesopotamian.png
+- Musketman-Middle Eastern.png
+- Musketman-Nordic.png
+- Musketman-North American.png
+- Musketman-Oceania.png
+- Musketman-Slavic.png
+- Musketman-South American.png
+- Paratrooper-African.png
+- Paratrooper-Barbarians.png
+- Paratrooper-East Asian.png
+- Paratrooper-Germanic.png
+- Paratrooper-Mediterranean.png
+- Paratrooper-Mesopotamian.png
+- Paratrooper-Middle Eastern.png
+- Paratrooper-Nordic.png
+- Paratrooper-North American.png
+- Paratrooper-Oceania.png
+- Paratrooper-Slavic.png
+- Paratrooper-South American.png
+- Pikeman-African.png
+- Pikeman-Barbarians.png
+- Pikeman-East Asian.png
+- Pikeman-Germanic.png
+- Pikeman-Mediterranean.png
+- Pikeman-Mesopotamian.png
+- Pikeman-Middle Eastern.png
+- Pikeman-Nordic.png
+- Pikeman-North American.png
+- Pikeman-Oceania.png
+- Pikeman-Slavic.png
+- Pikeman-South American.png
+- Privateer-African.png
+- Privateer-Barbarians.png
+- Privateer-East Asian.png
+- Privateer-Germanic.png
+- Privateer-Mediterranean.png
+- Privateer-Mesopotamian.png
+- Privateer-Middle Eastern.png
+- Privateer-Nordic.png
+- Privateer-North American.png
+- Privateer-Oceania.png
+- Privateer-Slavic.png
+- Privateer-South American.png
+- Rifleman-African.png
+- Rifleman-Barbarians.png
+- Rifleman-East Asian.png
+- Rifleman-Germanic.png
+- Rifleman-Mediterranean.png
+- Rifleman-Mesopotamian.png
+- Rifleman-Middle Eastern.png
+- Rifleman-Nordic.png
+- Rifleman-North American.png
+- Rifleman-Oceania.png
+- Rifleman-Slavic.png
+- Rifleman-South American.png
+- Rocket Artillery (template).png
+- Rocket Artillery-African.png
+- Rocket Artillery-Barbarians.png
+- Rocket Artillery-East Asian.png
+- Rocket Artillery-Germanic.png
+- Rocket Artillery-Mediterranean.png
+- Rocket Artillery-Mesopotamian.png
+- Rocket Artillery-Middle Eastern.png
+- Rocket Artillery-Nordic.png
+- Rocket Artillery-North American.png
+- Rocket Artillery-Oceania.png
+- Rocket Artillery-Slavic.png
+- Rocket Artillery-South American.png
+- Scout-African.png
+- Scout-Barbarians.png
+- Scout-East Asian.png
+- Scout-Germanic.png
+- Scout-Mediterranean.png
+- Scout-Mesopotamian.png
+- Scout-Middle Eastern.png
+- Scout-Nordic.png
+- Scout-North American.png
+- Scout-Oceania.png
+- Scout-Slavic.png
+- Scout-South American.png
+- Settler-African.png
+- Settler-East Asian.png
+- Settler-Germanic.png
+- Settler-Mediterranean.png
+- Settler-Mesopotamian.png
+- Settler-Middle Eastern.png
+- Settler-Nordic.png
+- Settler-North American.png
+- Settler-Oceania.png
+- Settler-Slavic.png
+- Settler-South American.png
+- South Asian.png
+- Spearman-African.png
+- Spearman-Barbarians.png
+- Spearman-East Asian.png
+- Spearman-Germanic.png
+- Spearman-Mediterranean.png
+- Spearman-Mesopotamian.png
+- Spearman-Middle Eastern.png
+- Spearman-Nordic.png
+- Spearman-North American.png
+- Spearman-Oceania.png
+- Spearman-Slavic.png
+- Spearman-South American.png
+- Swordsman-African.png
+- Swordsman-Barbarians.png
+- Swordsman-East Asian.png
+- Swordsman-Germanic.png
+- Swordsman-Mediterranean.png
+- Swordsman-Mesopotamian.png
+- Swordsman-Middle Eastern.png
+- Swordsman-Nordic.png
+- Swordsman-North American.png
+- Swordsman-Oceania.png
+- Swordsman-Slavic.png
+- Swordsman-South American.png
+- Tank-African.png
+- Tank-Barbarians.png
+- Tank-East Asian.png
+- Tank-Germanic.png
+- Tank-Mediterranean.png
+- Tank-Mesopotamian.png
+- Tank-Middle Eastern.png
+- Tank-Nordic.png
+- Tank-North American.png
+- Tank-Oceania.png
+- Tank-Slavic.png
+- Tank-South American.png
+- Trireme-African.png
+- Trireme-Barbarians.png
+- Trireme-East Asian.png
+- Trireme-Mediterranean.png
+- Trireme-Mesopotamian.png
+- Trireme-Middle Eastern.png
+- Trireme-Nordic.png
+- Trireme-North American.png
+- Trireme-Oceania.png
+- Trireme-Slavic.png
+- Trireme-South American.png
+- Warrior-African.png
+- Warrior-Barbarians.png
+- Warrior-East Asian.png
+- Warrior-Germanic.png
+- Warrior-Mediterranean.png
+- Warrior-Mesopotamian.png
+- Warrior-Middle Eastern.png
+- Warrior-Nordic.png
+- Warrior-North American.png
+- Warrior-Oceania.png
+- Warrior-Slavic.png
+- Warrior-South American.png
+- Work Boats-East Asian.png
+- Work Boats-Mediterranean.png
+- Work Boats-Mesopotamian.png
+- Work Boats-Middle Eastern.png
+- Work Boats-Nordic.png
+- Work Boats-North American.png
+- Work Boats-Oceania.png
+- Work Boats-Slavic.png
+- Work Boats-South American.png
+- Worker-African-Modern era.png
+- Worker-African.png
+- Worker-East Asian-Modern era.png
+- Worker-East Asian.png
+- Worker-Germanic.png
+- Worker-Mediterranean.png
+- Worker-Mesopotamian-Modern era.png
+- Worker-Mesopotamian.png
+- Worker-Middle Eastern-Modern era.png
+- Worker-Middle Eastern.png
+- Worker-Nordic-Modern era.png
+- Worker-Nordic.png
+- Worker-North American.png
+- Worker-Oceania-Modern era.png
+- Worker-Oceania.png
+- Worker-Slavic-Modern era.png
+- Worker-Slavic.png
+- Worker-South American-Modern era.png
+- Worker-South American.png
