@@ -30,6 +30,8 @@ Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons
 
 #### Tiles
 
+Unciv tiles:
+
 - Academy-Snow.png
 - Academy.png
 - Aluminum.png
@@ -190,6 +192,44 @@ Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons
 - Wheat.png
 - Wine+Plantation.png
 - Wine.png
+
+Extra tiles:
+
+- Academy-Classical era.png
+- Airfield (FH).png
+- Airport (FH).png
+- Arctic Outpost.png
+- Bear (1).png
+- Bear.png
+- Campus-Ancient era.png
+- Campus-Classical era.png
+- Campus-Medieval Era.png
+- Campus-Renaissance Era.png
+- City Center-Globalization era (FantasyHex).png
+- City-Ancient_era_Asian.png
+- City-Ancient_era_Middle_Eastern.png
+- City-Classical_era_Asian.png
+- City-Classical_era_Middle_Eastern.png
+- City-Industrial_era_Asian.png
+- City-Medieval_era_Asian.png
+- City-Medieval_era_Middle_Eastern.png
+- City-Renaissance_era_Asian.png
+- City-Renaissance_era_Middle_Eastern.png
+- Commerce Hub.png
+- Deer (1).png
+- Dog.png
+- Embassy.png
+- Encampment.png
+- Entertainment Complex.png
+- Government Plaza.png
+- GrasslandJungleMbanza.png
+- Industrial Zone.png
+- Mekewap.png
+- OutbackStation.png
+- RiversideFarm.png
+- Solar Panels (FH).png
+- Wind Farm (FH).png
+
 
 #### Units
 
@@ -1089,3 +1129,36 @@ Unciv units:
 - Worker-Slavic.png
 - Worker-South American-Modern era.png
 - Worker-South American.png
+
+Arcane & Diesel units:
+
+FantasyHex/Units/Airship.png
+FantasyHex/Units/Arcane Anti-Air.png
+FantasyHex/Units/Arcane Specialist.png
+FantasyHex/Units/Artillery-Diesel.png
+FantasyHex/Units/Battle Tank.png
+FantasyHex/Units/Battlecruiser.png
+FantasyHex/Units/Bombardier.png
+FantasyHex/Units/Cannon-Diesel.png
+FantasyHex/Units/Cruiser-Diesel.png
+FantasyHex/Units/Field Gun-Diesel.png
+FantasyHex/Units/Flying Fortress.png
+FantasyHex/Units/Flying Ironclad.png
+FantasyHex/Units/Frigate-Diesel.png
+FantasyHex/Units/Golem.png
+FantasyHex/Units/Grenadier-Diesel.png
+FantasyHex/Units/Gunboat.png
+FantasyHex/Units/Gyro Flyer.png
+FantasyHex/Units/Heavy Golem.png
+FantasyHex/Units/Heavy Gunship.png
+FantasyHex/Units/Heavy Infantry-Diesel.png
+FantasyHex/Units/Infantry-Diesel.png
+FantasyHex/Units/Machine Gun-Diesel.png
+FantasyHex/Units/Mechanized Infantry-Diesel.png
+FantasyHex/Units/Missile Artillery-Diesel.png
+FantasyHex/Units/Motorized Skirmisher.png
+FantasyHex/Units/Rune Cannon.png
+FantasyHex/Units/Tank-Diesel.png
+FantasyHex/Units/Titan.png
+FantasyHex/Units/War Wizard.png
+FantasyHex/Units/Wizard.png
