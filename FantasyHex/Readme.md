@@ -1230,6 +1230,30 @@ Advance Wars units:
 - Tank-Orange Star.png
 - Tank-Yellow Comet.png
 
+Alpha Frontier units:
+
+- Archangel Gunship.png
+- Archangel Mecha.png
+- Bladehead.png
+- Chaser.png
+- Colonizer-xeno.png
+- Constructor-xeno.png
+- Dire Bugwolf.png
+- Echidna Major.png
+- Flagship.png
+- Leviathan.png
+- Mimic.png
+- Mister Clanker (Cyborg Sniper).png
+- Omaskan Berserkers (Stim Trooper).png
+- Overlord.png
+- Pandora.png
+- Reaper.png
+- Sentinel.png
+- Silencer.png
+- Siren.png
+- Thunderstrike (Heavy Heli Gunship).png
+- Ulfradrake.png
+
 
 ### carriontrooper
 
@@ -1370,31 +1394,25 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Alpha Raptor Renegades (Assault Mecha).png
 - Anti-Air Buggy.png
 - Antigrav Tank.png
-- Archangel Gunship.png
-- Archangel Mecha.png
 - Artillery Mecha.png
 - Assault Hydrofoil.png
 - Assault Mecha.png
 - Battle Psion.png
 - Battleship-AlphaFrontier.png
 - Behemoth.png
-- Bladehead.png
 - Boondock Posse (Frontier Militia).png
 - Brutes of War (Hybrid Trooper).png
 - Bugwolf.png
-- Chaser.png
 - Civil Protection Mecha.png
 - Clone Trooper.png
 - Colonial Armor.png
 - Colonial Marine.png
-- Colonizer-xeno.png
 - Colonizer.png
 - Colony Marksman.png
 - Colony Rifleman.png
 - Combat Drone.png
 - Combat Heli.png
 - Combat Rover.png
-- Constructor-xeno.png
 - Constructor.png
 - Corvette.png
 - Cutty Sharks (Light Hydrofoil).png
@@ -1403,12 +1421,10 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Darter.png
 - Defense Sat.png
 - Delver Team.png
-- Dire Bugwolf.png
 - Dog Soldier.png
 - Drop Tank.png
 - Drop Trooper.png
 - Dune Raiders (Light Buggy).png
-- Echidna Major.png
 - Echidna.png
 - EmbarkedUnit-Behemoth.png
 - EmbarkedUnit-Civilian-AlphaFrontier.png
@@ -1440,7 +1456,6 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Exoframe Soldier.png
 - Expunger.png
 - Fierce Eels (Light Hovercraft).png
-- Flagship.png
 - Floating Furies (Hovertank).png
 - Frontier Militia.png
 - FTL Drive.png
@@ -1475,19 +1490,16 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Laser Sat.png
 - Laser Tank.png
 - Laser Trooper.png
-- Leviathan.png
 - Light Buggy.png
 - Light Hovercraft.png
 - Light Hydrofoil.png
 - Lurker.png
 - Martian Free Rifles (Colony Rifleman).png
-- Mimic.png
 - Mirage Tank.png
 - Mirage Trooper.png
 - Missile Artillery-AlphaFrontier.png
 - Missile Destroyer.png
 - Missile Rover.png
-- Mister Clanker (Cyborg Sniper).png
 - Mobile Fortress.png
 - Mycon.png
 - Nanite Life Support.png
@@ -1496,14 +1508,10 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Nerve Staple Conscript.png
 - Nuclear Resupply Payload.png
 - Nuke Sat.png
-- Omaskan Berserkers (Stim Trooper).png
-- Overlord.png
-- Pandora.png
 - Penal Legionnaire.png
 - Phantom Submersible.png
 - Photon Gunners (Laser Trooper).png
 - PrismTech Field Testers (Laser Tank).png
-- Reaper.png
 - Recon Mecha.png
 - Redhorse Striders (Recon Mecha).png
 - Religious Martyr.png
@@ -1512,12 +1520,9 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Rover Boys (Rover Explorer).png
 - Rover Explorer.png
 - Seadog.png
-- Sentinel.png
 - Siege Walker.png
-- Silencer.png
 - Silent Fleet (Phantom Submersible).png
 - Silver Arbalest Company (Artillery Mecha).png
-- Siren.png
 - SPAA.png
 - SPECTRE (Stealth Operative).png
 - Stalker.png
@@ -1537,9 +1542,7 @@ Made for theb [Alpha Frontier](https://github.com/carriontrooper/Alpha-Frontier)
 - Tame Gun Lobster.png
 - Tame Stalker.png
 - Tame Winghead.png
-- Thunderstrike (Heavy Heli Gunship).png
 - Tidehunters (Corvette).png
-- Ulfradrake.png
 - Visionary.png
 - Vulture Combat Drone.png
 - War Casket.png
