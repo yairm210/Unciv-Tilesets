@@ -6,9 +6,11 @@ Each tile is 64 x 56 pixels
 
 ### The Bucketeer
 
-Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons 3.0
+Made by [The Bucketeer / @GeneralWadaling](https://github.com/GeneralWadaling) and are licenced under Creative Commons 3.0
 
 #### Tiles
+
+Unciv tiles:
 
 - Academy-Atomic era.png
 - Academy-Future era.png
@@ -491,3 +493,29 @@ Made by The Bucketeer / @GeneralWadaling and are licenced under Creative Commons
 - Work Boats.png
 - Worker-Modern era.png
 - Worker.png
+
+Extra tiles:
+
+- Airfield.png
+- Airport.png
+- City Center-Globalization era.png
+- Solar Panels.png
+- Spaceport.png
+- Wind Farm.png
+
+### Basil 
+
+## Units
+
+- Apostle.png
+- Bird Warrior.png
+- Bombarda po Karpatsky.png
+- Chayka.png
+- Cozak.png
+- Druzhyna.png
+- Moravian Horseman.png
+- Opryshok.png
+- Partisan.png
+- Raptor Rider.png
+- Strelok-Novgorodian.png
+- Strelok.png
