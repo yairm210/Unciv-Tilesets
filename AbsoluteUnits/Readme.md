@@ -187,3 +187,19 @@ The following units for the [AbsoluteUnits unitset](https://github.com/letstalka
 - Work Boats.png
 - Worker-Industrial era.png
 - Worker.png
+
+
+### Basil 
+
+- Apostle.png
+- Bird Warrior.png
+- Bombarda po Karpatsky.png
+- Chayka.png
+- Cozak.png
+- Druzhyna.png
+- Moravian Horseman.png
+- Opryshok.png
+- Partisan.png
+- Raptor Rider.png
+- Strelok-Novgorodian.png
+- Strelok.png
