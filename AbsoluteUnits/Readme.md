@@ -203,3 +203,16 @@ The following units for the [AbsoluteUnits unitset](https://github.com/letstalka
 - Raptor Rider.png
 - Strelok-Novgorodian.png
 - Strelok.png
+
+### Pelo, for [Playable Barbarians](https://github.com/Jaba583/Playable-Barbarians)
+
+- Frigate-Barbarians.png
+- Great Prophet-Barbarians.png
+- Horse Archer-Barbarians.png
+- Lancer-Barbarians.png
+- Longswordsman-Barbarians.png
+- Missionary-Barbarians.png
+- Pikeman-Barbarians.png
+- Rider-Barbarians.png
+- Swordsman-Barbarians.png
+- Trireme-Barbarians.png
