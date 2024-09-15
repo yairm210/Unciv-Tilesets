@@ -203,6 +203,7 @@ The following units for the [AbsoluteUnits unitset](https://github.com/letstalka
 - Raptor Rider.png
 - Strelok-Novgorodian.png
 - Strelok.png
+- Worker-Barbarians.png
 
 ### Pelo, for [Playable Barbarians](https://github.com/Jaba583/Playable-Barbarians)
 
@@ -216,3 +217,5 @@ The following units for the [AbsoluteUnits unitset](https://github.com/letstalka
 - Rider-Barbarians.png
 - Swordsman-Barbarians.png
 - Trireme-Barbarians.png
+- Musketman-Barbarians.png
+- Great General-Barbarians.png

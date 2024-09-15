@@ -1,0 +1,1975 @@
+<!-- 'Other' text box for POC Duration -->
+                  <input type="number" class="poc-duration-other" placeholder="Specify duration in days" 
+                         style="display: none; width: 60px; padding: 5px; margin-top: 5px;" 
+                         min="1" max="999"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Line and Product Selection - Version 4</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            margin-bottom: 20px; /* Space between dropdowns */
+        }
+        .dropdown-select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #f9f9f9;
+            color: #000;
+            min-height: 50px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 2;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+            top: 100%;
+            margin-top: 10px; /* Space between the dropdown and the dropdown-select */
+        }
+        .dropdown-content label {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .dropdown-content input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .dropdown-content input[type="checkbox"]:checked + span {
+            color: black;
+        }
+        .show {
+            display: block;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            padding: 0;
+            z-index: 3;
+        }
+        .close-btn:hover {
+            color: red;
+        }
+        .product-line-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px; /* Space between product line boxes */
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        .product-line-box h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-line-selected-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px; /* Space between selected product boxes */
+            border-radius: 4px;
+            background-color: #f0f0f0;
+        }
+        .product-line-selected-box h4 {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-line-selected-box div {
+            padding: 5px 0;
+        }
+        .next-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px; /* Space above the button */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #d3d3d3; /* Greyed-out color */
+            color: #a9a9a9; /* Light grey text */
+            cursor: not-allowed;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .next-btn.active {
+            background-color: #4CAF50; /* Green color */
+            color: white; /* White text */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  
+<body>
+<h1>Merchant Information</h1>
+<form>
+    <label for="merchant-name">Merchant Name:</label>
+    <input type="text" id="merchant-name" name="merchant-name"><br><br>
+
+    <label for="existing-merchant">Is Existing Merchant?</label>
+    <input type="checkbox" id="existing-merchant" name="existing-merchant"><br><br>
+</form>
+
+<h2>Select Billing Currency</h2>
+<form>
+    <label for="currency">Choose a currency:</label>
+    <select id="currency" name="currency">
+        <option value="USD">USD</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="EUR">Euro</option>
+        <option value="ILS">Israeli Shekel</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="MXN">MXN</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="SGD">Singapore Dollar</option>
+    </select><br><br>
+
+    <!-- Invoice Level Minimums section -->
+    <div id="invoice-level-minimums-section" style="margin-top: 20px;">
+        <input type="checkbox" id="invoice-level-minimums" name="invoice-level-minimums">
+        <label for="invoice-level-minimums">Invoice level minimums</label>
+
+        <!-- Container for additional fields, initially hidden -->
+        <div id="invoice-minimums-details" style="display: none; margin-top: 10px;">
+            <label for="invoice-minimum-amount">Insert invoice level minimums:</label>
+            <input type="number" id="invoice-minimum-amount" name="invoice-minimum-amount" style="width: 120px; padding: 5px; margin-right: 10px;">
+
+            <!-- Styled message box -->
+            <div id="invoice-minimums-message" style="border: 1px solid #007bff; background-color: #f0f8ff; color: #000; padding: 10px; margin-top: 10px; border-radius: 4px;">
+                Minimums are the minimum amount that the Merchant will be invoiced monthly in the event that the consumption level of our services hasn't reached that amount. Example, at a volume of 100,000 txs at a price of $0.05 the consumption is at $5K, therefore a Minimum of $6K means the merchant will pay $6K.
+            </div>
+        </div>
+    </div>
+
+<!-- Cost of Integration Fee (invoice level) section -->
+<div id="integration-fee-section" style="margin-top: 20px;">
+    <input type="checkbox" id="integration-fee-checkbox" name="integration-fee-checkbox">
+    <label for="integration-fee-checkbox">Cost of Integration fee (waver requires VP approval)</label>
+
+    <!-- Container for additional fields, initially hidden -->
+    <div id="integration-fee-details" style="display: none; margin-top: 10px;">
+
+        <!-- Dropdown container for Integration Fee -->
+        <div id="integration-fee-dropdown" style="margin-top: 10px;">
+            <label for="integration-fee-options">Integration Fee:</label>
+            <select id="integration-fee-options" name="integration-fee-options" style="width: 250px; padding: 5px;">
+                <option value="10K">10K (for ACV below $250K)</option>
+                <option value="30K">30K (for ACV above $250K)</option>
+                <option value="above-30K">Integration Fee above default</option>
+            </select>
+        </div>
+
+        <!-- Container for additional fields, initially hidden -->
+        <div id="integration-fee-extra" style="display: none; margin-top: 10px;">
+            <label for="integration-fee-amount">Please fill in if integration at a cost:</label>
+            <input type="number" id="integration-fee-amount" name="integration-fee-amount" style="width: 120px; padding: 5px; margin-right: 10px;">
+        </div>
+
+    </div>
+</div>
+<script>
+    // Get elements
+    const checkbox = document.getElementById('integration-fee-checkbox');
+    const details = document.getElementById('integration-fee-details');
+    const dropdown = document.getElementById('integration-fee-options');
+    const extraFields = document.getElementById('integration-fee-extra');
+
+    // Toggle visibility of the details section when checkbox is clicked
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            details.style.display = 'block';
+        } else {
+            details.style.display = 'none';
+            extraFields.style.display = 'none'; // Hide extra fields if unchecked
+        }
+    });
+
+    // Show additional fields only when "Integration Fee above $30K" is selected
+    dropdown.addEventListener('change', function() {
+        if (dropdown.value === 'above-30K') {
+            extraFields.style.display = 'block';
+        } else {
+            extraFields.style.display = 'none';
+        }
+    });
+</script>
+
+    <!-- Relevant Geographies and Merchant Sites section -->
+    <div id="relevant-geographies-section" style="margin-top: 20px;">
+        <label for="relevant-geographies">Relevant Geographies and Merchant Sites:</label>
+        <textarea id="relevant-geographies" name="relevant-geographies" rows="4" cols="50" 
+                  placeholder="Enter description of relevant geographies and merchant sites" 
+                  style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-top: 10px;"></textarea>
+    </div>
+</form>
+
+<script>
+    // Invoice Level Minimums functionality
+    const invoiceMinimumsCheckbox = document.getElementById('invoice-level-minimums');
+    const invoiceMinimumsDetails = document.getElementById('invoice-minimums-details');
+
+    invoiceMinimumsCheckbox.addEventListener('change', function () {
+        invoiceMinimumsDetails.style.display = this.checked ? 'block' : 'none';
+    });
+
+    // Cost of Integration Fee functionality
+    const integrationFeeCheckbox = document.getElementById('integration-fee-checkbox');
+    const integrationFeeDetails = document.getElementById('integration-fee-details');
+
+    integrationFeeCheckbox.addEventListener('change', function () {
+        integrationFeeDetails.style.display = this.checked ? 'block' : 'none';
+    });
+</script>
+</body>
+
+<div class="dropdown">
+    <div class="dropdown-select" onclick="toggleProductLineDropdown()">
+        Select Product Lines
+        <button class="close-btn" onclick="closeProductLineDropdown(event)">×</button>
+    </div>
+    <div id="product-line-dropdown-content" class="dropdown-content">
+        <label><input type="checkbox" value="Fraud Management" onchange="updateProductLines()"> <span>Fraud Management</span></label>
+        <label><input type="checkbox" value="Account Protection" onchange="updateProductLines()"> <span>Account Protection</span></label>
+        <label><input type="checkbox" value="Policy and Abuse Protection" onchange="updateProductLines()"> <span>Policy and Abuse Protection</span></label>
+        <label><input type="checkbox" value="Payment Optimisation" onchange="updateProductLines()"> <span>Payment Optimisation</span></label>
+        <label><input type="checkbox" value="Forter Element (PSP)" onchange="updateProductLines()"> <span>Forter Element (PSP)</span></label>
+        <label><input type="checkbox" value="Chargeback Recovery" onchange="updateProductLines()"> <span>Chargeback Recovery</span></label>
+    </div>
+</div>
+
+<div id="product-line-container"></div>
+<div id="selected-products"></div>
+<button class="next-btn" disabled>Next</button>
+
+<script>
+    const productOptions = {
+        "Fraud Management": ["Fraud Management"],
+        "Account Protection": ["ATO Protection", "Signup Protection"],
+        "Policy and Abuse Protection": ["Policy & Abuse Protection"],
+        "Payment Optimisation": ["Smart 3DS", "PSD2 Engine", "Tokenisation", "Auth Uplift", "Smart Routing"],
+        "Forter Element (PSP)": ["Forter Element (PSP)"],
+        "Chargeback Recovery": ["Chargeback Recovery"]
+    };
+
+    const productToDecisionPoints = {
+        "Fraud Management": ["Checkout pre Auth", "Checkout Post Auth"],
+        "ATO Protection": ["Login"],
+        "Signup Protection": ["Signup"],
+        "Policy & Abuse Protection": ["Post Checkout", "Checkout pre Auth", "Checkout Post Auth", "Registration", "Login"],
+        "Smart 3DS": ["Checkout pre Auth"],
+        "PSD2 Engine": ["Checkout pre Auth"],
+        "Tokenisation": ["Checkout pre Auth"],
+        "Auth Uplift": ["Checkout pre Auth"],
+        "Smart Routing": ["Checkout pre Auth"],
+        "Forter Element (PSP)": ["Checkout pre Auth"],
+        "Chargeback Recovery": ["Post Checkout"]
+    };
+
+    function toggleProductLineDropdown() {
+        const dropdownContent = document.getElementById("product-line-dropdown-content");
+        const isShown = dropdownContent.classList.contains("show");
+
+        // Close any open product dropdowns
+        closeAllProductDropdowns();
+
+        // Toggle product line dropdown visibility
+        dropdownContent.classList.toggle("show", !isShown);
+    }
+
+    function closeProductLineDropdown(event) {
+        event.stopPropagation();
+        document.getElementById("product-line-dropdown-content").classList.remove("show");
+    }
+
+    function updateProductLines() {
+        const checkboxes = document.querySelectorAll('#product-line-dropdown-content input[type="checkbox"]');
+        const selectedProductLines = Array.from(checkboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        document.getElementById('product-line-container').innerHTML = '';
+
+        selectedProductLines.forEach(productLine => {
+            createProductLineDropdown(productLine);
+        });
+
+        // Clear selected products and decision points on product line change
+        document.getElementById('selected-products').innerHTML = '';
+        
+    }
+
+    function createProductLineDropdown(productLine) {
+        const productLineContainer = document.getElementById('product-line-container');
+
+        const productLineBox = document.createElement('div');
+        productLineBox.className = 'product-line-box';
+
+        const dropdownSelect = document.createElement('div');
+        dropdownSelect.className = 'dropdown-select';
+        dropdownSelect.id = `product-checkboxes-${productLine}`;
+
+        const productLabel = document.createElement('label')
+        productLabel.textContent = `Products for ${productLine}`;
+        productLabel.style = "font-weight: bold"
+        dropdownSelect.appendChild(productLabel)
+
+
+        dropdownSelect.appendChild(document.createElement('br'))
+
+        productLineBox.appendChild(dropdownSelect);
+        productLineContainer.appendChild(productLineBox);
+
+        const products = productOptions[productLine] || [];
+        products.forEach(product => {
+            const label = document.createElement('label');
+            const checked = products.length == 1? 'checked' : '';
+            label.innerHTML = `<input type="checkbox" value="${product}" ${checked} onchange="updateSelectedProducts('${productLine}')"> <span>${product}</span>`;
+            dropdownSelect.appendChild(label);
+            if (checked) updateSelectedProducts(productLine)
+        });
+
+        // const closeButton = document.createElement('button');
+        // closeButton.className = 'close-btn';
+        // closeButton.textContent = '×';
+        // closeButton.onclick = function(event) { closeProductDropdown(event, dropdownContent); };
+        // dropdownContent.appendChild(closeButton);
+
+    }
+
+    function toggleProductDropdown(productLineBox) {
+        const dropdownContent = productLineBox.querySelector('.dropdown-content');
+
+        // Close all other product dropdowns
+        closeAllProductDropdowns();
+
+        // Toggle the visibility of the current dropdown
+        dropdownContent.classList.toggle('show');
+    }
+
+    function updateSelectedProducts(productLine) {
+        // const selectedProducts = document.querySelectorAll('#product-line-container div input[type="checkbox"]:checked').length > 0;
+        const productDropdown = document.getElementById(`product-checkboxes-${productLine}`);
+        const checkboxes = productDropdown.querySelectorAll('input[type="checkbox"]');
+        const selectedProducts = Array.from(checkboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        displaySelectedProducts(productLine, selectedProducts);
+
+    }
+
+function displaySelectedProducts(productLine, selectedProducts) {
+    const selectedProductsDiv = document.getElementById('selected-products');
+
+    // Clear previous selected products for this product line
+    const existingProductDivs = selectedProductsDiv.querySelectorAll(`[data-product-line="${productLine}"]`);
+    existingProductDivs.forEach(div => div.remove());
+
+    selectedProducts.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.textContent = `Product: ${product}`;
+        productDiv.dataset.productLine = productLine;
+
+        const decisionPoints = productToDecisionPoints[product] || [];
+
+        // Create a multiselect checkbox menu for decision points
+        const selectContainer = document.createElement('div');
+        selectContainer.className = 'dropdown';
+
+        const select = document.createElement('div');
+        select.className = 'dropdown-select';
+        select.textContent = 'Select Decision Points';
+        select.onclick = function() { toggleDecisionPointsDropdown(selectContainer); };
+
+        const dropdownContent = document.createElement('div');
+        dropdownContent.className = 'dropdown-content';
+
+        decisionPoints.forEach(point => {
+            const label = document.createElement('label');
+            label.innerHTML = `<input type="checkbox" value="${point}" onchange="updateDecisionPoints('${productLine}', '${product}')"> <span>${point}</span>`;
+            dropdownContent.appendChild(label);
+        });
+
+        const closeButton = document.createElement('button');
+        closeButton.className = 'close-btn';
+        closeButton.textContent = '×';
+        closeButton.onclick = function(event) { closeDecisionPointsDropdown(event, dropdownContent); };
+        dropdownContent.appendChild(closeButton);
+
+        selectContainer.appendChild(select);
+        selectContainer.appendChild(dropdownContent);
+
+        productDiv.appendChild(selectContainer);
+
+        // Create and add a free text box at the end of each product entry
+        const contextLabel = document.createElement('label');
+        contextLabel.textContent = 'Additional Context:';
+        contextLabel.style.display = 'block';
+        contextLabel.style.marginTop = '10px';
+
+        const contextInput = document.createElement('textarea');
+        contextInput.id = `context-${product}`; // Add ID for context input
+        contextInput.style.width = '100%';
+        contextInput.style.marginTop = '5px';
+        contextInput.style.marginBottom = '10px';
+        contextInput.rows = 3; // Adjust as needed
+
+        productDiv.appendChild(contextLabel);
+        productDiv.appendChild(contextInput);
+
+        selectedProductsDiv.appendChild(productDiv);
+    });
+}
+
+
+
+
+    function updateDecisionPoints(productLine, product) {
+        const productDiv = document.querySelector(`[data-product-line="${productLine}"]`);
+        const checkboxes = productDiv.querySelectorAll('input[type="checkbox"]');
+        const selectedDecisionPoints = Array.from(checkboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        displayDecisionPointBoxes(productLine, product, selectedDecisionPoints);
+        // Update "Next" button status after decision points are updated
+        updateNextButtonStatus();
+    }
+
+ function displayDecisionPointBoxes(productLine, product, selectedDecisionPoints) {
+    const selectedProductsDiv = document.getElementById('selected-products');
+
+    // Add new boxes for newly selected decision points
+    selectedDecisionPoints.forEach(point => {
+        const boxId = `box-${productLine}-${product}-${point}`;
+        if (!document.getElementById(boxId)) {
+            const boxDiv = document.createElement('div');
+            boxDiv.className = 'product-line-selected-box';
+            boxDiv.id = boxId;
+
+            const heading = document.createElement('h4');
+            heading.textContent = `Selection`;
+            boxDiv.appendChild(heading);
+
+            const pointDiv = document.createElement('div');
+            pointDiv.textContent = `Product Line: ${productLine} || Product: ${product} || Decision Point: ${point}`;
+            boxDiv.appendChild(pointDiv);
+
+            // Create segmentation section with a Yes/No question
+            const segmentationSection = document.createElement('div');
+            segmentationSection.className = 'segmentation-section';
+
+            const segmentationLabel = document.createElement('h4');
+            segmentationLabel.textContent = `Segmenation`;
+            segmentationSection.appendChild(segmentationLabel);
+
+            const segmentationQuestion = document.createElement('p');
+            segmentationQuestion.textContent = 'As a general rule, each product may only have a single price structure + price. Segmentation allows us to set different prices or even price structures for the same product across different merchant portfolio segments. example: fraud mgmt - US traffic  - Uncovered fixed fee per tx, EU traffic uncovered in a platform fee. Example: fraud mgmt: US traffic: 0.04 USD. EU traffic 0.06 USD';
+            segmentationSection.appendChild(segmentationQuestion);
+
+            const segmentationYes = document.createElement('input');
+            segmentationYes.type = 'radio';
+            segmentationYes.name = `segmentation-${productLine}-${product}-${point}`;
+            segmentationYes.value = 'yes';
+            segmentationYes.id = `segmentation-yes-${productLine}-${product}-${point}`;
+
+            const segmentationNo = document.createElement('input');
+            segmentationNo.type = 'radio';
+            segmentationNo.name = `segmentation-${productLine}-${product}-${point}`;
+            segmentationNo.value = 'no';
+            segmentationNo.id = `segmentation-no-${productLine}-${product}-${point}`;
+            segmentationNo.checked = true;
+
+            const yesLabel = document.createElement('label');
+            yesLabel.textContent = 'Yes';
+            yesLabel.setAttribute('for', segmentationYes.id);
+
+            const noLabel = document.createElement('label');
+            noLabel.textContent = 'No';
+            noLabel.setAttribute('for', segmentationNo.id);
+
+            segmentationSection.appendChild(segmentationYes);
+            segmentationSection.appendChild(yesLabel);
+            segmentationSection.appendChild(segmentationNo);
+            segmentationSection.appendChild(noLabel);
+
+            boxDiv.appendChild(segmentationSection);
+            selectedProductsDiv.appendChild(boxDiv);
+
+            // Add event listener for 'Yes' selection to show dropdowns
+            segmentationYes.addEventListener('change', function() {
+                if (segmentationYes.checked) {
+                    const dropdownContainer = document.createElement('div');
+                    dropdownContainer.className = 'segmentation-dropdowns';
+
+                    // Number of segments dropdown
+                    const numberOfSegmentsLabel = document.createElement('label');
+                    numberOfSegmentsLabel.textContent = 'Number of Segments:';
+                    dropdownContainer.appendChild(numberOfSegmentsLabel);
+
+                    const numberOfSegmentsSelect = document.createElement('select');
+                    numberOfSegmentsSelect.id = `segments-${productLine}-${product}-${point}`;
+                    [2, 3, 4, 5].forEach(num => {
+                        const option = document.createElement('option');
+                        option.value = num;
+                        option.textContent = num;
+                        numberOfSegmentsSelect.appendChild(option);
+                    });
+                    dropdownContainer.appendChild(numberOfSegmentsSelect);
+
+                    // Segmentation criteria dropdown
+                    const segmentationCriteriaLabel = document.createElement('label');
+                    segmentationCriteriaLabel.textContent = 'Segmentation Criteria:';
+                    dropdownContainer.appendChild(segmentationCriteriaLabel);
+
+                    const segmentationCriteriaSelect = document.createElement('select');
+                    const criteriaOptions = [
+                        "Payment method type",
+                        "GEO - Shipping address",
+                        "GEO - Card Country (BIN)",
+                        "GEO - Commercial site",
+                        "3DS vs Non-3DS",
+                        "Other"
+                    ];
+                    criteriaOptions.forEach(criteria => {
+                        const option = document.createElement('option');
+                        option.value = criteria;
+                        option.textContent = criteria;
+                        segmentationCriteriaSelect.appendChild(option);
+                    });
+                    dropdownContainer.appendChild(segmentationCriteriaSelect);
+
+                    segmentationSection.appendChild(dropdownContainer);
+
+                    // Original context text box
+                    const contextTextLabel = document.createElement('label');
+                    contextTextLabel.textContent = `Context Info:`;
+                    contextTextLabel.className = 'context-text-field';
+
+                    const contextTextInput = document.createElement('input');
+                    contextTextInput.type = 'text';
+                    contextTextInput.maxLength = 40;
+                    contextTextInput.className = 'context-text-field';
+
+                    segmentationSection.appendChild(contextTextLabel);
+                    segmentationSection.appendChild(contextTextInput);
+
+                    // Handle number of segments selection
+                    numberOfSegmentsSelect.addEventListener('change', function() {
+                        // Remove any existing segment-specific text fields
+                        const existingTextFields = segmentationSection.querySelectorAll('.segment-text-field');
+                        existingTextFields.forEach(field => field.remove());
+
+                        // Add new text fields based on selected number of segments
+                        for (let i = 1; i <= numberOfSegmentsSelect.value; i++) {
+                            const segmentTextLabel = document.createElement('label');
+                            segmentTextLabel.textContent = `Segment ${i} Info:`;
+                            segmentTextLabel.className = 'segment-text-field';
+                            segmentTextLabel.style.display = 'block'; // Ensures each label is on a new line
+
+                            const segmentTextInput = document.createElement('input');
+                            segmentTextInput.type = 'text';
+                            segmentTextInput.maxLength = 40;
+                            segmentTextInput.className = 'segment-text-field';
+                            segmentTextInput.style.display = 'block'; // Ensures each input is on a new line
+
+                            segmentationSection.appendChild(segmentTextLabel);
+                            segmentationSection.appendChild(segmentTextInput);
+                        }
+                    });
+
+                    // Trigger change event to display text fields if a number is already selected
+                    numberOfSegmentsSelect.dispatchEvent(new Event('change'));
+                }
+            });
+
+            // Hide dropdowns if 'No' is selected
+            segmentationNo.addEventListener('change', function() {
+                const existingDropdowns = segmentationSection.querySelector('.segmentation-dropdowns');
+                if (existingDropdowns) {
+                    existingDropdowns.remove();
+                }
+                const existingTextFields = segmentationSection.querySelectorAll('.segment-text-field');
+                existingTextFields.forEach(field => field.remove());
+            });
+        }
+    });
+}
+function updateNextButtonStatus() {
+    const selectedProductLines = document.querySelectorAll('#product-line-dropdown-content input[type="checkbox"]:checked').length > 0;
+    const selectedProducts = document.querySelectorAll('#product-line-container div input[type="checkbox"]:checked').length > 0;
+    const nextButton = document.querySelector('.next-btn');
+
+    if (selectedProductLines && selectedProducts) {
+        nextButton.classList.add('active');
+        nextButton.disabled = false;
+    } else {
+        nextButton.classList.remove('active');
+        nextButton.disabled = true;
+    }
+}
+document.querySelector('.next-btn').addEventListener('click', generateProductTable);
+
+function generateProductTable() {
+    const tableContainer = document.getElementById('product-table');
+    if (tableContainer) {
+        tableContainer.remove();
+    }
+
+    const selectedProductsDiv = document.getElementById('selected-products');
+    if (!selectedProductsDiv) {
+        console.error('Element with id "selected-products" not found.');
+        return;
+    }
+
+ const rows = Array.from(selectedProductsDiv.querySelectorAll('div[data-product-line]')).flatMap(div => {
+    const productLine = div.dataset.productLine;
+    const productCheckboxes = div.querySelectorAll('input[type="checkbox"]:checked');
+    const segmentation = div.querySelector('input[type="radio"]:checked')?.value;
+    const numSegments = parseInt(div.querySelector('.segment-number-dropdown')?.value, 10) || 1;
+
+    return Array.from(productCheckboxes).map(checkbox => {
+        const product = checkbox.value;
+        const decisionPoints = productToDecisionPoints[product] || [];
+        const contextInput = div.querySelector(`#context-${product}`);
+        const context = contextInput ? contextInput.value : ''; // Default to empty string if not found
+
+        return {
+            header: `${productLine} | ${product}`,
+            productLine,
+            product,
+            decisionPoints,
+            segmentation,
+            numSegments,
+            context // Include context in the row data
+        };
+    });
+});
+
+
+    if (rows.length === 0) {
+        alert('No products selected.');
+        return;
+    }
+
+    // Extract unique headers and filter out those with "undefined"
+    const headers = Array.from(new Set(rows.map(row => row.header)))
+        .filter(header => !header.includes('undefined'));
+
+    if (headers.length === 0) {
+        alert('No valid data to display.');
+        return;
+    }
+
+    const maxColumns = Math.max(...rows.map(row => (row.segmentation === 'yes' ? row.numSegments : 1)));
+
+    const table = document.createElement('table');
+    table.className = 'product-table';
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    const subHeaderRow = document.createElement('tr'); // Sub-header row for segments
+
+    headers.forEach(headerText => {
+        const row = rows.find(row => row.header === headerText);
+
+        // Main header with colspan based on the number of segments
+        const th = document.createElement('th');
+        th.textContent = headerText;
+        th.style.border = '1px solid #ddd';
+        th.style.padding = '8px';
+        th.colSpan = row.segmentation === 'yes' ? row.numSegments : 1;
+        headerRow.appendChild(th);
+
+        // Sub-header for segments (only if segmentation is 'Yes')
+        if (row.segmentation === 'yes') {
+            for (let i = 1; i <= row.numSegments; i++) {
+                const subTh = document.createElement('th');
+                subTh.textContent = `Segment ${i}`;
+                subTh.style.border = '1px solid #ddd';
+                subTh.style.padding = '8px';
+                subHeaderRow.appendChild(subTh);
+            }
+        } else {
+            const subTh = document.createElement('th');
+            subTh.textContent = 'No Segmentation';
+            subTh.style.border = '1px solid #ddd';
+            subTh.style.padding = '8px';
+            subHeaderRow.appendChild(subTh);
+        }
+    });
+
+    thead.appendChild(headerRow);
+    thead.appendChild(subHeaderRow); // Append the sub-header row to the table head
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    // Create a row for each header
+    headers.forEach(headerText => {
+        const row = rows.find(row => row.header === headerText);
+        const dataRow = document.createElement('tr');
+
+        // Create a cell for each segment or single column
+        const numCols = row.segmentation === 'yes' ? row.numSegments : 1;
+
+        for (let i = 0; i < maxColumns; i++) {
+            const td = document.createElement('td');
+            td.style.border = '1px solid #ddd';
+            td.style.padding = '8px';
+
+            // Create a div to contain the decision points and additional controls
+            const contentDiv = document.createElement('div');
+            contentDiv.style.display = 'flex';
+            contentDiv.style.flexDirection = 'column';
+            contentDiv.style.height = '100%'; // Ensure it takes full height
+            contentDiv.style.justifyContent = 'space-between'; // Align items within the cell
+
+            // Add decision points
+            const decisionPointsDiv = document.createElement('div');
+            decisionPointsDiv.textContent = row.decisionPoints.join(', ');
+            decisionPointsDiv.style.marginBottom = '10px'; // Space between decision points and controls
+            contentDiv.appendChild(decisionPointsDiv);
+            
+
+// Function to create a button and content for Uncovered Structure and Price 
+const createButton = (labelText) => {
+    const buttonRow = document.createElement('div');
+    buttonRow.style.marginBottom = '5px'; // Space between buttons
+
+    const button = document.createElement('button');
+    button.textContent = labelText;
+    button.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-button`;
+    button.style.padding = '5px 10px';
+    button.style.backgroundColor = '#007bff';
+    button.style.color = '#fff';
+    button.style.border = 'none';
+    button.style.borderRadius = '4px';
+    button.style.cursor = 'pointer';
+
+    // Add a click event listener if needed
+    button.addEventListener('click', () => {
+        alert(`${labelText} button clicked.`);
+        if (labelText === 'Uncovered Structure and Price') {
+            // Check if select menu already exists
+            let selectMenu = buttonRow.querySelector('select');
+            if (!selectMenu) {
+                // Create and append the select menu
+                const options = [
+                    'Choose Price Per Billable Event',
+                    'Fixed fee per TX',
+                    'Tiered pricing',
+                    'Platform fee + Cap (fixed fee after cap)',
+                    'Platform fee + cap (tiered pricing after cap)',
+                    'Credit Model',
+                    'Platform Fee (uncapped) - Special Risk Approval',
+                    'BPS per Tx - Special Risk Approval',
+                    'Add to another product - point of decision pricing' // NEW OPTION ADDED HERE
+                ];
+                selectMenu = document.createElement('select');
+                selectMenu.style.display = 'block';
+                selectMenu.style.marginTop = '5px';
+                selectMenu.style.padding = '5px';
+                selectMenu.style.border = '1px solid #ddd';
+                selectMenu.style.borderRadius = '4px';
+
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    selectMenu.appendChild(opt);
+                });
+
+                // Add event listener to handle the option change
+                selectMenu.addEventListener('change', function () {
+                    // Remove existing pricing metrics if any
+                    const existingMetrics = buttonRow.querySelector('.pricing-metrics');
+                    if (existingMetrics) {
+                        existingMetrics.remove();
+                    }
+
+                    // Add new pricing metrics based on the selected option
+                    const selectedOption = this.value;
+                    const metricsDiv = document.createElement('div');
+                    metricsDiv.className = 'pricing-metrics';
+                    metricsDiv.style.marginTop = '10px';
+
+                    if (selectedOption === 'Fixed fee per TX') {
+                        metricsDiv.innerHTML = `
+                            <label for="price-cents">Price in cents:</label>
+                            <input type="number" id="price-cents" name="price-cents" style="width: 100px; padding: 5px;">
+                        `;
+                    } else if (selectedOption === 'BPS per Tx - Special Risk Approval') {
+                        metricsDiv.innerHTML = `
+                            <label for="price-bps">Price in BPS:</label>
+                            <input type="number" id="price-bps" name="price-bps" style="width: 100px; padding: 5px;">
+                        `;
+                    } else if (selectedOption === 'Platform Fee (uncapped) - Special Risk Approval') {
+                        metricsDiv.innerHTML = `
+                            <label for="price-dollars">Price in Select Currency:</label>
+                            <input type="number" id="price-dollars" name="price-dollars" style="width: 100px; padding: 5px;">
+                            <label for="fee-period">Platform Fee Period:</label>
+                            <select id="fee-period" name="fee-period" style="width: 100px; padding: 5px;">
+                                <option value="monthly">Monthly</option>
+                                <option value="annually">Annually</option>
+                            </select>
+                        `;
+                    } else if (selectedOption === 'Tiered pricing') {
+                        metricsDiv.innerHTML = `
+                            <label for="num-tiers">Number of Tiers:</label>
+                            <select id="num-tiers" name="num-tiers" style="width: 100px; padding: 5px;">
+                                <option value="1" selected>1</option>
+                                ${[...Array(9).keys()].map(i => `<option value="${i + 2}">${i + 2}</option>`).join('')}
+                            </select>
+                            <label for="tiering-metric">Tiering Metric:</label>
+                            <select id="tiering-metric" name="tiering-metric" style="width: 100px; padding: 5px;">
+                                <option value="total-processed-volume">Total Processed Volume</option>
+                                <option value="individual-tx-value">Individual TX Value</option>
+                                <option value="hard-decline-rate">Hard Decline Rate</option>
+                                <option value="cb-rate">CB Rate</option>
+                            </select>
+                            <label for="time-window">Time Window for Tiers:</label>
+                            <select id="time-window" name="time-window" style="width: 100px; padding: 5px;">
+                                <option value="invoice-month">Invoice Month</option>
+                                <option value="rolling-3-months">Rolling 3 Months</option>
+                                <option value="quarterly">Quarterly</option>
+                                <option value="calendar-year">Calendar Year</option>
+                                <option value="billing-year">Billing Year</option>
+                            </select>
+                            <label for="tiers-logic">Tiers Logic:</label>
+                            <select id="tiers-logic" name="tiers-logic" style="width: 100px; padding: 5px;">
+                                <option value="all-traffic">Last tier reached price applies to all traffic</option>
+                                <option value="within-tier">Last tier reached price applies only to traffic within tier</option>
+                            </select>
+                            <div id="tier-rows" style="margin-top: 10px;">
+                                <!-- Tier rows will be dynamically added here -->
+                            </div>
+                        `;
+                
+                        // Add event listener for when the number of tiers is changed
+                        const numTiersSelect = metricsDiv.querySelector('#num-tiers');
+                        numTiersSelect.addEventListener('change', function () {
+                            const numTiers = parseInt(this.value, 10);
+                            const tierRowsDiv = document.getElementById('tier-rows');
+                            tierRowsDiv.innerHTML = ''; // Clear existing rows
+                
+                            for (let i = 0; i < numTiers; i++) {
+                                const rowDiv = document.createElement('div');
+                                rowDiv.style.marginBottom = '10px';
+                
+                                rowDiv.innerHTML = `
+                                    <label for="price-per-tier-${i}">Price per Tier ${i + 1}:</label>
+                                    <input type="number" id="price-per-tier-${i}" name="price-per-tier-${i}" style="width: 100px; padding: 5px;">
+                                    <label for="start-point-${i}">Tier Start Point ${i + 1}:</label>
+                                    <input type="number" id="start-point-${i}" name="start-point-${i}" style="width: 100px; padding: 5px;">
+                                    <label for="end-point-${i}">Tier End Point ${i + 1}:</label>
+                                    <input type="number" id="end-point-${i}" name="end-point-${i}" style="width: 100px; padding: 5px;">
+                                `;
+                
+                                tierRowsDiv.appendChild(rowDiv);
+                            }
+                        });
+                    } else if (selectedOption === 'Platform fee + Cap (fixed fee after cap)') {
+                      metricsDiv.innerHTML = `
+                          <div>
+                              <label for="price-dollars">Price in ${currency}:</label>
+                              <input type="number" id="price-dollars" name="price-dollars" style="width: 100px; padding: 5px;">
+                              <label for="fee-period">Platform Fee Period:</label>
+                              <select id="fee-period" name="fee-period" style="width: 100px; padding: 5px;">
+                                  <option value="monthly">Monthly</option>
+                                  <option value="annually">Annually</option>
+                              </select>
+                          </div>
+                          <div style="margin-top: 10px;">
+                              <label for="volume-cap">Volume Cap:</label>
+                              <input type="number" id="volume-cap" name="volume-cap" style="width: 100px; padding: 5px;">
+                              <label for="price-cents">Price per TX in cents (after cap):</label>
+                              <input type="number" id="price-cents" name="price-cents" style="width: 100px; padding: 5px;">
+                          </div>
+                      `;
+                    } else if (selectedOption === 'Platform fee + cap (tiered pricing after cap)') {
+                      metricsDiv.innerHTML = `
+                          <div>
+                              <label for="price-dollars">Platform Price in ${currency}:</label>
+                              <input type="number" id="price-dollars" name="price-dollars" style="width: 100px; padding: 5px;">
+                              <label for="fee-period">Platform Fee Period:</label>
+                              <select id="fee-period" name="fee-period" style="width: 100px; padding: 5px;">
+                                  <option value="monthly">Monthly</option>
+                                  <option value="annually">Annually</option>
+                              </select>
+                          </div>
+                          <div style="margin-top: 10px;">
+                              <label for="volume-cap">Volume Cap:</label>
+                              <input type="number" id="volume-cap" name="volume-cap" style="width: 100px; padding: 5px;">
+                          </div>
+                          <label for="num-tiers">Number of Tiers:</label>
+                            <select id="num-tiers" name="num-tiers" style="width: 100px; padding: 5px;">
+                                <option value="1" selected>1</option>
+                                ${[...Array(9).keys()].map(i => `<option value="${i + 2}">${i + 2}</option>`).join('')}
+                            </select>
+                            <label for="tiering-metric">Tiering Metric:</label>
+                            <select id="tiering-metric" name="tiering-metric" style="width: 100px; padding: 5px;">
+                                <option value="total-processed-volume">Total Processed Volume</option>
+                                <option value="individual-tx-value">Individual TX Value</option>
+                                <option value="hard-decline-rate">Hard Decline Rate</option>
+                                <option value="cb-rate">CB Rate</option>
+                            </select>
+                            <label for="time-window">Time Window for Tiers:</label>
+                            <select id="time-window" name="time-window" style="width: 100px; padding: 5px;">
+                                <option value="invoice-month">Invoice Month</option>
+                                <option value="rolling-3-months">Rolling 3 Months</option>
+                                <option value="quarterly">Quarterly</option>
+                                <option value="calendar-year">Calendar Year</option>
+                                <option value="billing-year">Billing Year</option>
+                            </select>
+                            <label for="tiers-logic">Tiers Logic:</label>
+                            <select id="tiers-logic" name="tiers-logic" style="width: 100px; padding: 5px;">
+                                <option value="all-traffic">Last tier reached price applies to all traffic</option>
+                                <option value="within-tier">Last tier reached price applies only to traffic within tier</option>
+                            </select>
+                            <div id="tier-rows" style="margin-top: 10px;">
+                                <!-- Tier rows will be dynamically added here -->
+                            </div>
+                      `;
+                      
+                           // Add event listener for when the number of tiers is changed
+                        const numTiersSelect = metricsDiv.querySelector('#num-tiers');
+                        numTiersSelect.addEventListener('change', function () {
+                            const numTiers = parseInt(this.value, 10);
+                            const tierRowsDiv = document.getElementById('tier-rows');
+                            tierRowsDiv.innerHTML = ''; // Clear existing rows
+                
+                            for (let i = 0; i < numTiers; i++) {
+                                const rowDiv = document.createElement('div');
+                                rowDiv.style.marginBottom = '10px';
+                
+                                rowDiv.innerHTML = `
+                                    <label for="price-per-tier-${i}">Price per Tier ${i + 1}:</label>
+                                    <input type="number" id="price-per-tier-${i}" name="price-per-tier-${i}" style="width: 100px; padding: 5px;">
+                                    <label for="start-point-${i}">Tier Start Point ${i + 1}:</label>
+                                    <input type="number" id="start-point-${i}" name="start-point-${i}" style="width: 100px; padding: 5px;">
+                                    <label for="end-point-${i}">Tier End Point ${i + 1}:</label>
+                                    <input type="number" id="end-point-${i}" name="end-point-${i}" style="width: 100px; padding: 5px;">
+                                `;
+                
+                                tierRowsDiv.appendChild(rowDiv);
+                            }
+                        });                             
+
+                    } 
+                      else if (selectedOption === 'Credit Model') {
+                          metricsDiv.innerHTML = `
+                              <div>
+                                  <p style="font-weight: bold; color: red; margin: 0;">
+                                      Credit Model is a new model, and still being formulated. Please consult Risk, Legal, and Billing.
+                                      Credits are an all or nothing model - if chosen, must apply to all products.
+                                      Incentives/Penalties and Credit Consumtion all fall out of credit consumption calculation.
+                                  </p>
+                              </div>
+                              <div style="margin-top: 5px;">
+                                  <label for="context" style="margin-bottom: 2px;">Context:</label>
+                                  <textarea id="context" name="context" rows="4" cols="50" style="width: 100%; padding: 5px; margin: 0;"></textarea>
+                              </div>
+                              <div style="margin-top: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 4px;" id="committed-spend-box">
+                                  <h3 style="margin: 0 0 5px 0; font-size: inherit;">Committed Spend and Available Credits</h3>
+                                  <p style="margin: 0 0 5px 0; font-size: inherit;">
+                                      <strong>Committed spend:</strong> How much does the merchant commit to paying?<br>
+                                      <strong>Available Credits:</strong> What does the merchant get in return?
+                                  </p>
+                                  <label for="committed-years" style="margin-bottom: 2px; font-size: inherit;">Commitment Period:</label>
+                                  <select id="committed-years" name="committed-years" style="width: 150px; padding: 5px; margin-bottom: 5px; font-size: inherit;">
+                                      <option value="1" selected>1 year</option>
+                                      <option value="2">2 years</option>
+                                      <option value="3">3 years</option>
+                                      <option value="4">4 years</option>
+                                      <option value="5">5 years</option>
+                                  </select>
+                                  <div id="committed-spend-boxes" style="margin-top: 5px;">
+                                      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                                          <label for="committed-spend-year-1" style="margin-bottom: 2px; font-size: inherit;">Committed Spend Amount (Year 1):</label>
+                                          <input type="number" id="committed-spend-year-1" name="committed-spend-year-1" style="width: 75px; padding: 5px; margin-left: 10px; font-size: inherit;">
+                                          <label for="available-credits-year-1" style="margin-left: 20px; font-size: inherit;">Total Available Credits (Year 1):</label>
+                                          <input type="number" id="available-credits-year-1" name="available-credits-year-1" style="width: 75px; padding: 5px; margin-left: 10px; font-size: inherit;">
+                                      </div>
+                                  </div>
+                              </div>
+                      
+                              <!-- Credit event fee Box -->
+                              <div style="margin-top: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 4px;" id="credit-event-fee">
+                                  <h3 style="margin: 0 0 5px 0; font-size: inherit;">Credit Event Fee</h3>
+                                  <p style="margin: 0 0 5px 0; font-size: inherit;">
+                                      <strong>Explanation:</strong> How much does each consumption unit of the acquired service cost?
+                                  </p>
+                                  <label for="price-cents" style="font-size: inherit;">Price in cents:</label>
+                                  <input type="number" id="price-cents" name="price-cents" style="width: 75px; padding: 5px; margin-top: 5px; font-size: inherit;">
+                              </div>
+                      
+                              <!-- Top Up, Roll Over, Pull Forward Box -->
+                              <div style="margin-top: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 4px;" id="top-up-box">
+                                  <h3 style="margin: 0 0 5px 0; font-size: inherit;">Top up, Roll Over and Pull Forward</h3>
+                                  <p style="margin: 0 0 10px 0; font-size: inherit;">
+                                      <strong>Explanation:</strong> All 3 fields are optional.<br>
+                                      <strong>Top up:</strong> For cases where the merchant finished credit before the end of the year and would like to buy more credit (Min 5% of annual). This is optional. If not defined, we will charge on usage based on the approved Service Rate.<br>
+                                      <strong>Roll Over:</strong> For cases where the merchant didn't finish their credit in the agreed period (year) and would like to roll credit over to the following year (Max 10% of annual). (Below 10% requires VP approval).<br>
+                                      <strong>Pull Forward:</strong> For cases where the merchant has a multi-year credit and finished a year early; they can pull forward credit from the consecutive year.
+                                  </p>
+                                  <label for="top-up" style="font-size: inherit;">Top Up:</label>
+                                  <input type="number" id="top-up" name="top-up" style="width: 75px; padding: 5px; margin-bottom: 5px; font-size: inherit;">
+                                  <br>
+                                  <label for="roll-over" style="font-size: inherit;">Roll Over:</label>
+                                  <input type="number" id="roll-over" name="roll-over" style="width: 75px; padding: 5px; margin-bottom: 5px; font-size: inherit;">
+                                  <br>
+                                  <label for="pull-forward" style="font-size: inherit;">Pull Forward:</label>
+                                  <input type="number" id="pull-forward" name="pull-forward" style="width: 75px; padding: 5px; font-size: inherit;">
+                              </div>
+                      
+                              <!-- Billing Method Box -->
+                              <div style="margin-top: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 4px;" id="billing-method-box">
+                                  <h3 style="margin: 0 0 5px 0; font-size: inherit;">Billing Method</h3>
+                                  <label for="billing-method" style="font-size: inherit;">Select a billing method:</label>
+                                  <select id="billing-method" name="billing-method" style="width: 200px; padding: 5px; font-size: inherit;">
+                                      <option value="" selected>Select</option>
+                                      <option value="equal-monthly-installments">Equal Monthly Installments</option>
+                                      <option value="pay-entire-year-upfront">Pay entire year upfront</option>
+                                      <option value="pay-as-you-go">Pay as you go (merchant pays what they used)</option>
+                                  </select>
+                              </div>
+                          `;
+                      
+                          const committedYearsSelect = metricsDiv.querySelector('#committed-years');
+                          const committedSpendBoxesDiv = metricsDiv.querySelector('#committed-spend-boxes');
+                      
+                          // Event listener to dynamically add text boxes based on the selected number of years
+                          committedYearsSelect.addEventListener('change', function() {
+                              const selectedYears = parseInt(this.value, 10);
+                              committedSpendBoxesDiv.innerHTML = ''; // Clear existing boxes
+                      
+                              // Add a text box for each year selected with corresponding "Total Available Credits"
+                              for (let i = 1; i <= selectedYears; i++) {
+                                  const containerDiv = document.createElement('div');
+                                  containerDiv.style.display = 'flex';
+                                  containerDiv.style.alignItems = 'center';
+                                  containerDiv.style.marginBottom = '5px';
+                      
+                                  const spendLabel = document.createElement('label');
+                                  spendLabel.setAttribute('for', `committed-spend-year-${i}`);
+                                  spendLabel.textContent = `Committed Spend Amount (Year ${i}):`;
+                                  spendLabel.style.marginBottom = '2px';
+                                  spendLabel.style.fontSize = 'inherit';
+                      
+                                  const spendInput = document.createElement('input');
+                                  spendInput.type = 'number';
+                                  spendInput.id = `committed-spend-year-${i}`;
+                                  spendInput.name = `committed-spend-year-${i}`;
+                                  spendInput.style.width = '75px'; // Reduced size
+                                  spendInput.style.padding = '5px';
+                                  spendInput.style.marginLeft = '10px';
+                                  spendInput.style.fontSize = 'inherit';
+                      
+                                  const creditsLabel = document.createElement('label');
+                                  creditsLabel.setAttribute('for', `available-credits-year-${i}`);
+                                  creditsLabel.textContent = `Total Available Credits (Year ${i}):`;
+                                  creditsLabel.style.marginLeft = '20px';
+                                  creditsLabel.style.fontSize = 'inherit';
+                      
+                                  const creditsInput = document.createElement('input');
+                                  creditsInput.type = 'number';
+                                  creditsInput.id = `available-credits-year-${i}`;
+                                  creditsInput.name = `available-credits-year-${i}`;
+                                  creditsInput.style.width = '75px'; // Reduced size
+                                  creditsInput.style.padding = '5px';
+                                  creditsInput.style.marginLeft = '10px';
+                                  creditsInput.style.fontSize = 'inherit';
+                      
+                                  containerDiv.appendChild(spendLabel);
+                                  containerDiv.appendChild(spendInput);
+                                  containerDiv.appendChild(creditsLabel);
+                                  containerDiv.appendChild(creditsInput);
+                      
+                                  committedSpendBoxesDiv.appendChild(containerDiv);
+                              }
+                          });
+                      }
+                      
+// Check for "Add to another product - point of decision pricing"
+if (selectedOption === 'Add to another product - point of decision pricing') {
+    // Extract unique headers from table generation logic
+    const headers = Array.from(new Set(rows.map(row => row.header)))
+        .filter(header => !header.includes('undefined'));
+
+    // Create the HTML for the ACV Allocation box
+    let checkboxHTML = '';
+    headers.forEach(header => {
+        checkboxHTML += `<label><input type="checkbox" value="${header}" /> ${header}</label><br />`;
+    });
+
+    // Generate the metricsDiv inner HTML
+    metricsDiv.innerHTML = `
+        <label for="acv-allocation">Product ACV Allocation per Forter Policy.</label>
+        <textarea id="acv-allocation" name="acv-allocation" rows="1" style="width: 50%; padding: 5px;"></textarea>
+        <br />
+        <h4>Choose to which product - price to include this product:</h4>
+        <div id="checkbox-container">
+            ${checkboxHTML}
+        </div>
+    `;
+}
+
+
+                    buttonRow.appendChild(metricsDiv);
+                });
+
+                buttonRow.appendChild(selectMenu);
+            }
+        }
+    });
+
+    buttonRow.appendChild(button);
+    return buttonRow;
+};
+
+
+
+            // Function to create a checkbox
+            const createCheckbox = (labelText) => {
+                const checkboxRow = document.createElement('div');
+                checkboxRow.style.marginBottom = '5px'; // Space between checkboxes
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-checkbox`;
+
+                const label = document.createElement('label');
+                label.textContent = labelText;
+                label.style.marginLeft = '5px';
+                label.appendChild(checkbox);
+
+                checkboxRow.appendChild(label);
+                return checkboxRow;
+            };
+
+
+
+// Create and add "Coverage" button if applicable + coverage to appear before uncovered
+if (headerText.toLowerCase().includes('fraud management')) {
+    const coverageButton = createButton('Coverage');
+    coverageButton.querySelector('button').addEventListener('click', () => {
+        const existingCoverageTypeDiv = contentDiv.querySelector('.coverage-type-div');
+
+        // If the dropdown already exists, close and hide it
+        if (existingCoverageTypeDiv) {
+            existingCoverageTypeDiv.style.display = existingCoverageTypeDiv.style.display === 'none' ? 'block' : 'none';
+            return; // Exit the function to prevent further execution
+        }
+
+        const messageBox = document.createElement('div');
+        messageBox.style.border = '1px solid #007bff';
+        messageBox.style.backgroundColor = '#f0f8ff';
+        messageBox.style.color = '#000';
+        messageBox.style.padding = '10px';
+        messageBox.style.marginTop = '10px';
+        messageBox.style.borderRadius = '4px';
+        messageBox.textContent = 'You have chosen coverage. Note if you will also add uncovered price for this column/segment, this would mean a hybrid pricing - covered and uncovered will be charged from the same event.';
+
+        // Insert the message box just after the "Coverage" button
+        contentDiv.insertBefore(messageBox, coverageButton.nextSibling);
+
+        // Create and add the "Coverage Type" dropdown menu
+        const coverageTypeDiv = document.createElement('div');
+        coverageTypeDiv.className = 'coverage-type-div'; // Add a class to identify this div
+        coverageTypeDiv.style.marginTop = '10px';
+
+        const coverageTypeLabel = document.createElement('label');
+        coverageTypeLabel.textContent = 'Coverage Type:';
+        coverageTypeLabel.style.marginRight = '10px';
+
+        const coverageTypeSelect = document.createElement('select');
+        coverageTypeSelect.style.padding = '5px';
+        coverageTypeSelect.style.borderRadius = '4px';
+        coverageTypeSelect.style.border = '1px solid #ddd';
+
+        const defaultOption = document.createElement('option');
+        defaultOption.value = '';
+        defaultOption.textContent = 'Click here to select';
+        defaultOption.disabled = true;
+        defaultOption.selected = true;
+
+        const optionFullCoverage = document.createElement('option');
+        optionFullCoverage.value = 'full-coverage';
+        optionFullCoverage.textContent = 'Full coverage';
+
+        const optionCappedLiability = document.createElement('option');
+        optionCappedLiability.value = 'capped-liability';
+        optionCappedLiability.textContent = 'Capped liability';
+
+        coverageTypeSelect.appendChild(defaultOption);
+        coverageTypeSelect.appendChild(optionFullCoverage);
+        coverageTypeSelect.appendChild(optionCappedLiability);
+
+        coverageTypeDiv.appendChild(coverageTypeLabel);
+        coverageTypeDiv.appendChild(coverageTypeSelect);
+
+        // Insert the "Coverage Type" dropdown below the message box
+        contentDiv.insertBefore(coverageTypeDiv, messageBox.nextSibling);
+
+        // Function to handle the coverage type selection
+        const handleCoverageTypeChange = () => {
+            // Remove any existing input fields
+            const existingInputs = coverageTypeDiv.querySelectorAll('.coverage-input');
+            existingInputs.forEach(input => input.remove());
+
+            if (coverageTypeSelect.value === 'full-coverage') {
+                // Create "Price in BPS" input for Full coverage
+                const priceBpsDiv = document.createElement('div');
+                priceBpsDiv.className = 'coverage-input';
+                priceBpsDiv.style.marginTop = '10px';
+
+                const priceBpsLabel = document.createElement('label');
+                priceBpsLabel.textContent = 'Price in BPS:';
+                priceBpsLabel.style.marginRight = '10px';
+
+                const priceBpsInput = document.createElement('input');
+                priceBpsInput.type = 'number';
+                priceBpsInput.style.width = '100px';
+                priceBpsInput.style.padding = '5px';
+                priceBpsInput.style.borderRadius = '4px';
+                priceBpsInput.style.border = '1px solid #ddd';
+
+                priceBpsDiv.appendChild(priceBpsLabel);
+                priceBpsDiv.appendChild(priceBpsInput);
+
+                coverageTypeDiv.appendChild(priceBpsDiv);
+
+            } else if (coverageTypeSelect.value === 'capped-liability') {
+                // Create "Price in BPS" and "Coverage to apply" inputs for Capped liability
+                const cappedDiv = document.createElement('div');
+                cappedDiv.className = 'coverage-input';
+                cappedDiv.style.marginTop = '10px';
+
+                const priceBpsLabel = document.createElement('label');
+                priceBpsLabel.textContent = 'Price in BPS:';
+                priceBpsLabel.style.marginRight = '10px';
+
+                const priceBpsInput = document.createElement('input');
+                priceBpsInput.type = 'number';
+                priceBpsInput.style.width = '100px';
+                priceBpsInput.style.padding = '5px';
+                priceBpsInput.style.borderRadius = '4px';
+                priceBpsInput.style.border = '1px solid #ddd';
+
+                const coverageApplyLabel = document.createElement('label');
+                coverageApplyLabel.textContent = 'Coverage to apply for every BPS above:';
+                coverageApplyLabel.style.marginRight = '10px';
+                coverageApplyLabel.style.marginLeft = '20px';
+
+                const coverageApplyInput = document.createElement('input');
+                coverageApplyInput.type = 'number';
+                coverageApplyInput.style.width = '100px';
+                coverageApplyInput.style.padding = '5px';
+                coverageApplyInput.style.borderRadius = '4px';
+                coverageApplyInput.style.border = '1px solid #ddd';
+
+    const cbRateThresholdLabel = document.createElement('label');
+                cbRateThresholdLabel.textContent = 'BPS Fraud Chargeback Rate';
+                cbRateThresholdLabel.style.marginRight = '10px';
+                cbRateThresholdLabel.style.marginLeft = '20px';
+
+
+                cappedDiv.appendChild(priceBpsLabel);
+                cappedDiv.appendChild(priceBpsInput);
+                cappedDiv.appendChild(coverageApplyLabel);
+                cappedDiv.appendChild(coverageApplyInput);
+    cappedDiv.appendChild(cbRateThresholdLabel);
+
+                coverageTypeDiv.appendChild(cappedDiv);
+            }
+        };
+
+        // Listen for changes on the coverage type dropdown
+        coverageTypeSelect.addEventListener('change', handleCoverageTypeChange);
+    });
+    contentDiv.appendChild(coverageButton);
+}
+
+// Create and append the "Uncovered Structure and Price" button
+contentDiv.appendChild(createButton('Uncovered Structure and Price')); // Button
+
+const createCommitsButton = () => {
+    const commitsButton = createButton('Commits');
+    commitsButton.querySelector('button').addEventListener('click', () => {
+        const existingCommitsMessageDiv = contentDiv.querySelector('.commits-message-div');
+
+        // If the message box already exists, toggle its visibility
+        if (existingCommitsMessageDiv) {
+            existingCommitsMessageDiv.style.display = existingCommitsMessageDiv.style.display === 'none' ? 'block' : 'none';
+            return; // Exit the function to prevent further execution
+        }
+
+        // Create the message box
+        const messageBox = document.createElement('div');
+        messageBox.className = 'commits-message-div'; // Add a class to identify this div
+        messageBox.style.border = '1px solid #007bff';
+        messageBox.style.backgroundColor = '#f0f8ff';
+        messageBox.style.color = '#000';
+        messageBox.style.padding = '10px';
+        messageBox.style.marginTop = '10px';
+        messageBox.style.borderRadius = '4px';
+        messageBox.textContent = 'Note any commits not on the list would require ensuring merchant can track and monitor KPIs in the portal.';
+
+        // Insert the message box just after the "Commits" button
+        contentDiv.insertBefore(messageBox, commitsButton.nextSibling);
+
+        // Create the Performance Commitments section
+        const performanceDiv = document.createElement('div');
+        performanceDiv.className = 'performance-commitments-div';
+        performanceDiv.style.marginTop = '10px';
+        performanceDiv.innerHTML = `
+            <div id="metric-row" class="form-row">
+                <label for="metrics-dropdown">Which metrics are being committed to?</label>
+                <div class="dropdown" id="metrics-dropdown">
+                    <button type="button" class="dropdown-btn">--Select--</button>
+                    <div class="dropdown-content" style="display: none;">
+                        <label><input type="checkbox" value="hard_decline_rate">Hard Decline Rate</label>
+                        <label><input type="checkbox" value="chargeback_rate">Chargeback Rate</label>
+                        <label><input type="checkbox" value="3ds_rate">3DS Rate (for Risk)</label>
+                        <label><input type="checkbox" value="exemption_rate_consolidated">Exemption Rate (PSD2) - Consolidated</label>
+                        <label><input type="checkbox" value="exemption_rate_by_amount">Exemption Rate (PSD2) - by Amount Tier</label>
+                        <label><input type="checkbox" value="other">Other (subject to Risk Team approval)</label>
+                    </div>
+                </div>
+            </div>
+
+            <table id="metrics-table" style="display:none;">
+                <tbody id="metrics-table-body"></tbody>
+            </table>
+        `;
+
+        // Insert the Performance Commitments section below the message box
+        contentDiv.insertBefore(performanceDiv, messageBox.nextSibling);
+
+        // Add JavaScript logic for the performance commitments section
+        const dropdown = performanceDiv.querySelector('#metrics-dropdown');
+        const dropdownBtn = dropdown.querySelector('.dropdown-btn');
+        const dropdownContent = dropdown.querySelector('.dropdown-content');
+        const metricsTable = performanceDiv.querySelector('#metrics-table');
+        const metricsTableBody = performanceDiv.querySelector('#metrics-table-body');
+
+        // Toggle the visibility of the dropdown content when the button is clicked
+        dropdownBtn.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent the click from bubbling up to the window
+            dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Close the dropdown if clicking outside of it
+        window.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdownContent.style.display = 'none';
+            }
+        });
+
+        // Handle the checkbox selections within the dropdown
+        dropdownContent.addEventListener('change', function(e) {
+            if (e.target.tagName.toLowerCase() === 'input') {
+                updateDropdownBtnText();
+                updateMetricsTable();
+            }
+        });
+
+        function updateDropdownBtnText() {
+            const checkedItems = dropdownContent.querySelectorAll('input[type="checkbox"]:checked');
+            const checkedLabels = Array.from(checkedItems).map(item => item.parentElement.textContent.trim());
+            dropdownBtn.textContent = checkedLabels.length > 0 ? checkedLabels.join(', ') : '--Select--';
+        }
+
+        function updateMetricsTable() {
+            const checkedItems = dropdownContent.querySelectorAll('input[type="checkbox"]:checked');
+            metricsTableBody.innerHTML = '';
+            checkedItems.forEach(item => {
+                const row = document.createElement('tr');
+                const metricCell = document.createElement('td');
+                const inputCell = document.createElement('td');
+
+                metricCell.textContent = item.parentElement.textContent.trim();
+
+                if (item.value === 'exemption_rate_by_amount') {
+                    const exemptionRateTable = createExemptionRateTable();
+                    inputCell.appendChild(exemptionRateTable);
+                } else if (item.value === 'other') {
+                    const otherInput = document.createElement('input');
+                    otherInput.type = 'text';
+                    otherInput.maxLength = 100;
+                    otherInput.placeholder = 'Enter metric (max 100 characters)';
+                    inputCell.appendChild(otherInput);
+                } else {
+                    const inputGroup = createInputGroup();
+                    inputCell.appendChild(inputGroup);
+                }
+
+                row.appendChild(metricCell);
+                row.appendChild(inputCell);
+                metricsTableBody.appendChild(row);
+            });
+
+            metricsTable.style.display = checkedItems.length > 0 ? 'block' : 'none';
+        }
+
+        function createInputGroup() {
+            const inputGroup = document.createElement('div');
+            const inputField = document.createElement('input');
+            const percentSpan = document.createElement('span');
+
+            inputField.type = 'text';
+            inputField.placeholder = 'Enter value';
+            inputGroup.className = 'input-group';
+            percentSpan.textContent = '%';
+
+            inputField.addEventListener('input', function() {
+                this.value = enforceNumericInput(this.value);
+            });
+
+            inputGroup.appendChild(inputField);
+            inputGroup.appendChild(percentSpan);
+
+            return inputGroup;
+        }
+
+        function createExemptionRateTable() {
+            const table = document.createElement('table');
+            table.className = 'exemption-rate-table';
+            const headerRow = table.insertRow();
+            headerRow.insertCell().textContent = 'Amount Tier';
+            headerRow.insertCell().textContent = 'Exemption Rate Commit';
+
+            const tiers = ['0 - 30 €', '30 € - 100 €', '100 € - 250 €', '250 € - 500 €'];
+            tiers.forEach(tier => {
+                const row = table.insertRow();
+                row.insertCell().textContent = tier;
+                const inputCell = row.insertCell();
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = 'Enter rate';
+                input.addEventListener('input', function() {
+                    this.value = enforceNumericInput(this.value);
+                });
+                inputCell.appendChild(input);
+            });
+
+            return table;
+        }
+
+        function enforceNumericInput(value) {
+            // Remove any non-digit and non-decimal point characters
+            value = value.replace(/[^\d.]/g, '');
+
+            // Ensure only one decimal point
+            const parts = value.split('.');
+            if (parts.length > 2) {
+                value = parts[0] + '.' + parts.slice(1).join('');
+            }
+
+            return value;
+        }
+    });
+    contentDiv.appendChild(commitsButton);
+};
+
+// Call the function to add the "Commits" button
+createCommitsButton();
+
+// Create and add "Incentive & Penalties" button
+const incentivesButton = createButton('Incentive & Penalties');
+contentDiv.appendChild(incentivesButton); // Button
+
+// Create a div that will contain the new text
+const finallyBox = document.createElement('div');
+finallyBox.innerHTML = `
+    <p>Note: If offering a penalty, it is commercially recommended to offer an identical incentive.</p>
+`;
+finallyBox.style.display = 'none'; // Initially hidden
+finallyBox.style.marginTop = '10px';
+finallyBox.style.padding = '10px';
+finallyBox.style.border = '1px solid #ddd';
+finallyBox.style.backgroundColor = '#f9f9f9';
+contentDiv.appendChild(finallyBox);
+
+// Function to create input fields dynamically for general options
+function addInputFields(targetDiv, optionName) {
+    // Check if fields already exist
+    if (targetDiv.querySelector(`.input-container[data-option="${optionName}"]`)) return;
+
+    const inputContainer = document.createElement('div');
+    inputContainer.classList.add('input-container'); // Assign a class for easy removal
+    inputContainer.dataset.option = optionName; // Assign the option name for easy removal
+
+    // Special case for "Other" option
+    let descriptionField = '';
+    if (optionName === 'Other') {
+        descriptionField = `
+            <p style="font-weight: bold;">${optionName}</p>
+            <label for="${optionName}_description">Description:</label>
+            <input type="text" id="${optionName}_description" style="width: 250px; margin-bottom: 10px;">
+            <br>
+        `;
+    } else {
+        inputContainer.innerHTML = `<p style="font-weight: bold;">${optionName}</p>`;
+    }
+
+    inputContainer.innerHTML += `
+        ${descriptionField}
+        <label for="${optionName}_start">Start Point:</label>
+        <input type="number" id="${optionName}_start" step="0.01" style="width: 60px;"> %
+        &nbsp;
+        <label for="${optionName}_step">Step Size:</label>
+        <input type="number" id="${optionName}_step" step="0.01" style="width: 60px;"> %
+        &nbsp;
+        <label for="${optionName}_end">End Point (Optional):</label>
+        <input type="number" id="${optionName}_end" step="0.01" style="width: 60px;"> %
+        &nbsp;
+        <label for="${optionName}_incentiveForm">Incentive Form:</label>
+        <select id="${optionName}_incentiveForm" style="width: 150px;">
+            <option value="">Select</option>
+            <option value="Fixed Amount">Fixed Amount</option>
+            <option value="% of Total TPV">% of Total TPV</option>
+            <option value="% of Segment">% of Segment</option>
+        </select>
+    `;
+    targetDiv.appendChild(inputContainer);
+}
+
+// Function to create multiple rows for PSD2 Exemption Rate
+function addPsd2Fields(targetDiv) {
+    if (targetDiv.querySelector('.psd2-fields')) return; // Prevent duplicate fields
+
+    const container = document.createElement('div');
+    container.classList.add('input-container', 'psd2-fields');
+    
+    // Add "PSD2 Exemption" header
+    const psd2Header = document.createElement('p');
+    psd2Header.textContent = "PSD2 Exemption";
+    psd2Header.style.fontWeight = "bold";
+    container.appendChild(psd2Header);
+
+    const priceTiers = ['0-30 euro', '30-100 euro', '100-250 euro', '250-500 euro'];
+    
+    priceTiers.forEach(tier => {
+        const tierRow = document.createElement('div');
+        tierRow.innerHTML = `
+            <p>${tier}</p>
+            <label for="${tier}_start">Start Point:</label>
+            <input type="number" id="${tier}_start" step="0.01" style="width: 60px;"> %
+            &nbsp;
+            <label for="${tier}_step">Step Size:</label>
+            <input type="number" id="${tier}_step" step="0.01" style="width: 60px;"> %
+            &nbsp;
+            <label for="${tier}_end">End Point (Optional):</label>
+            <input type="number" id="${tier}_end" step="0.01" style="width: 60px;"> %
+            &nbsp;
+            <label for="${tier}_incentiveForm">Incentive Form:</label>
+            <select id="${tier}_incentiveForm" style="width: 150px;">
+                <option value="">Select</option>
+                <option value="Fixed Amount">Fixed Amount</option>
+                <option value="% of Total TPV">% of Total TPV</option>
+                <option value="% of Segment">% of Segment</option>
+            </select>
+        `;
+        container.appendChild(tierRow);
+    });
+    
+    targetDiv.appendChild(container);
+}
+
+// Create Incentives and Penalties boxes with a custom checkbox multi-select menu
+const incentivesBox = document.createElement('div');
+incentivesBox.innerHTML = `
+    <p>Incentives</p>
+    <div class="kpi-options" id="incentiveOptions">
+        <label><input type="checkbox" value="Hard Decline Rate"> <span style="font-weight: bold;">Hard Decline Rate</span></label><br>
+        <label><input type="checkbox" value="3DS rate"> <span style="font-weight: bold;">3DS Rate</span></label><br>
+        <label><input type="checkbox" value="PSD2 Exemption Rate"> <span style="font-weight: bold;">PSD2 Exemption Rate</span></label><br>
+        <label><input type="checkbox" value="Fraud Chargeback Rate"> <span style="font-weight: bold;">Fraud Chargeback Rate</span></label><br>
+        <label><input type="checkbox" value="Other"> <span style="font-weight: bold;">Other</span></label>
+    </div>
+    <div id="incentiveSelections"></div>
+`;
+incentivesBox.style.display = 'none';
+incentivesBox.style.marginTop = '10px';
+incentivesBox.style.padding = '10px';
+incentivesBox.style.border = '1px solid #ddd';
+incentivesBox.style.backgroundColor = '#f1f1f1';
+contentDiv.appendChild(incentivesBox);
+
+const penaltiesBox = document.createElement('div');
+penaltiesBox.innerHTML = `
+    <p>Penalties</p>
+    <div class="kpi-options" id="penaltyOptions">
+        <label><input type="checkbox" value="Hard Decline Rate"> <span style="font-weight: bold;">Hard Decline Rate</span></label><br>
+        <label><input type="checkbox" value="3DS rate"> <span style="font-weight: bold;">3DS Rate</span></label><br>
+        <label><input type="checkbox" value="PSD2 Exemption Rate"> <span style="font-weight: bold;">PSD2 Exemption Rate</span></label><br>
+        <label><input type="checkbox" value="Fraud Chargeback Rate"> <span style="font-weight: bold;">Fraud Chargeback Rate</span></label><br>
+        <label><input type="checkbox" value="Other"> <span style="font-weight: bold;">Other</span></label>
+    </div>
+    <div id="penaltySelections"></div>
+`;
+penaltiesBox.style.display = 'none';
+penaltiesBox.style.marginTop = '10px';
+penaltiesBox.style.padding = '10px';
+penaltiesBox.style.border = '1px solid #ddd';
+penaltiesBox.style.backgroundColor = '#f1f1f1';
+contentDiv.appendChild(penaltiesBox);
+
+// Unified event listener to handle both Incentives and Penalties selections
+document.addEventListener('change', function(e) {
+    if (e.target.type === 'checkbox') {
+        const isIncentive = e.target.closest('#incentiveOptions') !== null;
+        const isPenalty = e.target.closest('#penaltyOptions') !== null;
+        let targetDiv;
+
+        if (isIncentive) {
+            targetDiv = document.getElementById('incentiveSelections');
+        } else if (isPenalty) {
+            targetDiv = document.getElementById('penaltySelections');
+        }
+
+        if (targetDiv) {
+            if (e.target.checked) {
+                if (e.target.value === 'PSD2 Exemption Rate') {
+                    // Add multiple rows for PSD2 Exemption Rate
+                    addPsd2Fields(targetDiv);
+                } else {
+                    // Add standard fields for other options
+                    addInputFields(targetDiv, e.target.value);
+                }
+            } else {
+                // Remove the input fields associated with this checkbox
+                const inputContainers = targetDiv.querySelectorAll(`.input-container[data-option="${e.target.value}"]`);
+                inputContainers.forEach(container => targetDiv.removeChild(container));
+            }
+        }
+    }
+});
+
+// Add event listener to toggle the visibility of the note and boxes when the button is clicked
+incentivesButton.addEventListener('click', function() {
+    finallyBox.style.display = (finallyBox.style.display === 'none') ? 'block' : 'none';
+    incentivesBox.style.display = (incentivesBox.style.display === 'none') ? 'block' : 'none';
+    penaltiesBox.style.display = (penaltiesBox.style.display === 'none') ? 'block' : 'none';
+});
+
+
+
+            const isPocCheckbox = createCheckbox('Is POC or Forter Challenge'); // Updated label
+            contentDiv.appendChild(isPocCheckbox); // Checkbox
+
+
+// Add dropdown for POC options
+const pocDropdownDiv = document.createElement('div');
+pocDropdownDiv.style.display = 'none'; // Initially hidden
+pocDropdownDiv.innerHTML = `
+    <select class="poc-dropdown">
+        <option value="poc">POC</option>
+        <option value="forterChallenge">Forter Challenge based on Commits</option>
+    </select>
+    <div class="poc-options hidden">
+        <!-- POC Format dropdown -->
+        <select class="poc-format">
+            <option value="">Select POC Format</option>
+            <option value="shadowMode">Shadow Mode</option>
+            <option value="liveSplitTraffic">Live Split Traffic</option>
+            <option value="liveWithCompetitor">Live with competitor in Shadow Mode</option>
+            <option value="offline">Offline</option>
+            <option value="batchFiles">Batch Files</option>
+        </select>
+
+        <!-- POC Duration dropdown with 'Other' option -->
+        <select class="poc-duration">
+            <option value="">Select POC Duration</option>
+            <option value="60">60 days</option>
+            <option value="90">90 days</option>
+            <option value="other">Other</option> <!-- 'Other' option added -->
+        </select>
+
+        <!-- 'Other' text box for POC Duration -->
+        <input type="number" class="poc-duration-other" placeholder="Specify duration in days" 
+               style="display: none; width: 60px; padding: 5px; margin-top: 5px;" 
+               min="1" max="999">
+
+        <!-- POC/Forter Challenge KPIs - hidden dropdown multi-select -->
+        <div class="poc-kpis-dropdown" style="position: relative; margin-top: 10px;">
+            <div class="dropdown-select" style="width: 120px; background-color: #fff; padding: 4px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; text-align: center;">
+                Select POC/Forter Challenge KPIs
+            </div>
+            <div class="dropdown-content" style="display: none; position: absolute; width: 80%; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; max-height: 100px; overflow-y: auto; z-index: 1; padding: 5px;">
+                <label style="display: flex; align-items: center; padding: 4px;">
+                    <input type="checkbox" value="hardDeclineRate" style="margin-right: 10px;">
+                    <span>Hard Decline Rate</span> 
+                </label>
+                <label style="display: flex; align-items: center; padding: 4px;">
+                    <input type="checkbox" value="chargebackRate" style="margin-right: 10px;">
+                    <span>Chargeback Rate</span> 
+                </label>
+                <label style="display: flex; align-items: center; padding: 4px;">
+                    <input type="checkbox" value="psd2ExemptionRate" style="margin-right: 10px;">
+                    <span>PSD2 Exemption Rate</span> 
+                </label>
+                <label style="display: flex; align-items: center; padding: 4px;">
+                    <input type="checkbox" value="completionRate" style="margin-right: 10px;">
+                    <span>Completion Rate</span> 
+                </label>
+                <label style="display: flex; align-items: center; padding: 4px;">
+                    <input type="checkbox" value="other" style="margin-right: 10px;">
+                    <span>Other</span>
+                </label>
+                <!-- 'Other' text box for custom KPI -->
+                <input type="text" class="kpi-other-text" placeholder="Specify other KPI" 
+                       style="display: none; width: 90%; padding: 5px; margin: 8px 5%;" 
+                       maxlength="100">
+            </div>
+        </div>
+    </div>
+`;
+contentDiv.appendChild(pocDropdownDiv);
+
+// Toggle dropdown visibility when the "Is POC or Forter Challenge" checkbox is clicked
+const pocCheckbox = isPocCheckbox.querySelector('input[type="checkbox"]');
+pocCheckbox.addEventListener('change', function() {
+    pocDropdownDiv.style.display = this.checked ? 'block' : 'none';
+});
+
+// Handle visibility of "Other" text box based on POC Duration selection
+const pocDurationDropdown = pocDropdownDiv.querySelector('.poc-duration');
+const pocDurationOtherInput = pocDropdownDiv.querySelector('.poc-duration-other');
+pocDurationDropdown.addEventListener('change', function() {
+    if (this.value === 'other') {
+        pocDurationOtherInput.style.display = 'block';
+    } else {
+        pocDurationOtherInput.style.display = 'none';
+    }
+});
+
+// Handle POC/Forter Challenge KPIs dropdown toggle
+const pocKpisDropdown = pocDropdownDiv.querySelector('.poc-kpis-dropdown .dropdown-select');
+const pocKpisContent = pocDropdownDiv.querySelector('.poc-kpis-dropdown .dropdown-content');
+pocKpisDropdown.addEventListener('click', function() {
+    pocKpisContent.style.display = pocKpisContent.style.display === 'block' ? 'none' : 'block';
+});
+
+// Handle visibility of "Other" text box based on KPI selection
+const kpiOtherCheckbox = pocKpisContent.querySelector('input[value="other"]');
+const kpiOtherTextInput = pocKpisContent.querySelector('.kpi-other-text');
+kpiOtherCheckbox.addEventListener('change', function() {
+    kpiOtherTextInput.style.display = this.checked ? 'block' : 'none';
+});
+
+// Close dropdown if clicked outside
+window.addEventListener('click', function(e) {
+    if (!pocKpisDropdown.contains(e.target) && !pocKpisContent.contains(e.target)) {
+        pocKpisContent.style.display = 'none';
+    }
+});
+        
+
+            // Add context row
+            const contextDiv = document.createElement('div');
+            contextDiv.textContent = row.context || 'No context provided';
+            contextDiv.style.marginTop = '10px';
+            contentDiv.appendChild(contextDiv);
+
+            // Add contract length input at the bottom
+            const contractLengthDiv = document.createElement('div');
+            contractLengthDiv.style.marginTop = 'auto'; // Ensure it's at the bottom
+            contractLengthDiv.innerHTML = `
+                <label for="contractLength">Contract Length:</label>
+                <input type="number" id="contractLength" name="contractLength" min="1" step="1" placeholder="Months" 
+                       maxlength="3" style="width: 120px; padding: 5px; margin-top: 5px;">
+                       
+            `;
+            
+            
+            contentDiv.appendChild(contractLengthDiv);
+
+            td.appendChild(contentDiv);
+            dataRow.appendChild(td);
+        }
+
+        tbody.appendChild(dataRow);
+
+    });
+
+    table.appendChild(tbody);
+    const productTableContainer = document.createElement('div');
+    productTableContainer.id = 'product-table';
+    productTableContainer.appendChild(table);
+
+    document.body.appendChild(productTableContainer);
+}
+
+
+
+
+function createButton(labelText) {
+    const button = document.createElement('button');
+    button.textContent = labelText;
+    button.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-button`;
+    button.style.padding = '5px 10px';
+    button.style.backgroundColor = '#007bff';
+    button.style.color = '#fff';
+    button.style.border = 'none';
+    button.style.borderRadius = '4px';
+    button.style.cursor = 'pointer';
+
+    button.addEventListener('click', () => {
+        alert(`${labelText} button clicked.`);
+    });
+
+    return button;
+}
+
+function createCheckbox(labelText) {
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-checkbox`;
+
+    const label = document.createElement('label');
+    label.textContent = labelText;
+    label.style.marginLeft = '5px';
+    label.appendChild(checkbox);
+
+    return label;
+}
+
+
+function createButton(labelText) {
+    const button = document.createElement('button');
+    button.textContent = labelText;
+    button.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-button`;
+    button.style.padding = '5px 10px';
+    button.style.backgroundColor = '#007bff';
+    button.style.color = '#fff';
+    button.style.border = 'none';
+    button.style.borderRadius = '4px';
+    button.style.cursor = 'pointer';
+
+    // Add a click event listener if needed
+    button.addEventListener('click', () => {
+        alert(`${labelText} button clicked.`);
+    });
+
+    return button;
+}
+
+function createCheckbox(labelText) {
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-checkbox`;
+
+    const label = document.createElement('label');
+    label.textContent = labelText;
+    label.style.marginLeft = '5px';
+    label.appendChild(checkbox);
+
+    return label;
+}
+
+
+function createButton(labelText) {
+    const buttonRow = document.createElement('div');
+    buttonRow.style.marginBottom = '5px'; // Space between buttons
+
+    const button = document.createElement('button');
+    button.textContent = labelText;
+    button.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-button`;
+    button.style.padding = '5px 10px';
+    button.style.backgroundColor = '#007bff';
+    button.style.color = '#fff';
+    button.style.border = 'none';
+    button.style.borderRadius = '4px';
+    button.style.cursor = 'pointer';
+
+    button.addEventListener('click', () => {
+        alert(`${labelText} button clicked.`);
+    });
+
+    buttonRow.appendChild(button);
+    return buttonRow;
+}
+
+function createCheckbox(labelText) {
+    const checkboxRow = document.createElement('div');
+    checkboxRow.style.marginBottom = '5px'; // Space between checkboxes
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = `${labelText.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}-checkbox`;
+
+    const label = document.createElement('label');
+    label.textContent = labelText;
+    label.style.marginLeft = '5px';
+    label.appendChild(checkbox);
+
+    checkboxRow.appendChild(label);
+    return checkboxRow;
+}
+
+
+
+    function toggleDecisionPointsDropdown(selectContainer) {
+        const dropdownContent = selectContainer.querySelector('.dropdown-content');
+
+        // Close any open decision points dropdowns
+        closeAllDecisionPointsDropdowns();
+
+        // Toggle the visibility of the current dropdown
+        dropdownContent.classList.toggle('show');
+        
+    }
+
+    function closeDecisionPointsDropdown(event, dropdownContent) {
+        event.stopPropagation();
+        dropdownContent.classList.remove('show');
+    }
+
+    function closeAllProductDropdowns() {
+        const openProductDropdowns = document.querySelectorAll('.product-line-dropdown-content.show');
+        openProductDropdowns.forEach(dd => dd.classList.remove('show'));
+    }
+
+    function closeAllDecisionPointsDropdowns() {
+        const openDecisionPointsDropdowns = document.querySelectorAll('.dropdown-content.show');
+        openDecisionPointsDropdowns.forEach(dd => dd.classList.remove('show'));
+    }
+    
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-select') && !event.target.matches('.close-btn') &&
+            !event.target.closest('.dropdown-content')) {
+            document.querySelectorAll('.dropdown-content.show').forEach(dd => dd.classList.remove('show'));
+        }
+
+    };
+
+</script>
+</head>
+</html>
